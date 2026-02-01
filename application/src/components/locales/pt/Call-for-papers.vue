@@ -1,0 +1,248 @@
+<script>
+import OrganizerItem from "@/components/OrganizerItem.vue";
+
+import Tr from "@/i18n/translation";
+
+export default {
+    components: {
+        OrganizerItem,
+    },
+    setup() {
+        return {
+            Tr,
+        };
+    },
+};
+</script>
+
+<template>
+    <ol class="list-group list-group-numbered my-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">
+                    Prazo para submissão:
+                </strong>
+                <strong class="text-danger"> 23 de fevereiro</strong><br />
+                <RouterLink
+                    :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates' })"
+                    class="uline"
+                >
+                    Ver todas as datas importantes
+                </RouterLink>
+            </div>
+        </li>
+    </ol>
+
+    <p>
+        A
+        <a href="https://clihc2026.laihc.org/" class="uline">
+            XII Conferência Latino-Americana de Interação Humano-Computador (CLIHC
+            2026)</a
+        >
+        tem como objetivo oferecer um fórum de alto nível que reúna as comunidades
+        latino-americana e internacional de pesquisa em Interação Humano-Computador (IHC),
+        para discutir e compartilhar ideias, métodos, abordagens e técnicas para o
+        projeto, implementação e avaliação de experiências interativas do usuário. De
+        acordo com edições anteriores, acreditamos que a IHC deve fomentar a produção de
+        tecnologia que possa ser utilizada e beneficiar o maior número possível de
+        pessoas, promovendo o intercâmbio intercultural e a cooperação entre pessoas com
+        diferentes contextos e necessidades.
+    </p>
+
+    <p>
+        Neste ano, a CLIHC 2026 ocorrerá em duas cidades, Aracaju/Brasil e Oaxaca/México.
+        No entanto, a
+        <strong>
+            apresentação dos artigos completos ocorrerá exclusivamente na cidade satélite
+            de Aracaju, Brasil </strong
+        >. No momento, estão abertas submissões na seguinte categoria:
+    </p>
+
+    <ul>
+        <li>Artigos completos</li>
+    </ul>
+
+    <p>
+        Os autores são convidados a preparar e submeter artigos que relatem projetos de
+        pesquisa, designs inovadores, estudos com usuários, modelos de interação, estudos
+        de campo, estudos de caso, entre outros. Acadêmicos, pesquisadores, profissionais
+        da indústria, bem como estudantes de graduação e pós-graduação, são bem-vindos a
+        participar do processo de seleção por revisão por pares dos trabalhos que serão
+        apresentados na conferência, de 06 a 08 de maio de 2026.
+    </p>
+
+    <p>
+        Os temas das submissões podem abranger todos os aspectos da IHC, incluindo, mas
+        não se limitando a:
+    </p>
+
+    <ol>
+        <li>Computação afetiva</li>
+        <li>Interação cérebro-computador (BCI)</li>
+        <li>CSCW e computação social</li>
+        <li>Métodos de design</li>
+        <li>Educação e IHC</li>
+        <li>Interação incorporada</li>
+        <li>IHC para o desenvolvimento (HCI4D)</li>
+        <li>Saúde e IHC</li>
+        <li>
+            IHC e Inteligência Artificial (por exemplo, IA centrada no ser humano e design
+            de interação; interação humano-IA; IHC em sistemas baseados em IA; experiência
+            do usuário e design para sistemas de IA; IHC responsável e ética para
+            aplicações de IA; Inteligência Artificial Explicável – XAI)
+        </li>
+        <li>IHC na sociedade</li>
+        <li>Inclusão e acessibilidade</li>
+        <li>Interfaces de usuário inovadoras</li>
+        <li>Avaliação da interação</li>
+        <li>Interfaces e interação em jogos</li>
+        <li>Computação móvel</li>
+        <li>Percepção e visualização</li>
+        <li>Interação humano-robô e telepresença</li>
+        <li>Experiência do usuário (UX) e usabilidade</li>
+        <li>Propriedade intelectual e IHC</li>
+    </ol>
+
+    <h3>Submissão e datas importantes</h3>
+    <p>
+        Todos os manuscritos devem ser submetidos completamente anonimizados. Por favor,
+        considere um público internacional: evite termos locais e utilize o sistema
+        internacional de unidades. Além disso, considere seguir as
+        <a
+            target="_blank"
+            href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors"
+            class="uline"
+         rel="noopener noreferrer">
+            diretrizes de acessibilidade (edição CLIHC 2023, abre em nova aba) </a
+        >.
+    </p>
+
+    <h4 id="cpf-dates">Datas importantes (Artigos completos)</h4>
+    <ul>
+        <li>
+            Submissão de resumos: <strong class="text-danger">23 de fevereiro</strong>
+        </li>
+        <li>Submissão de artigos: 1º de março</li>
+        <li>Notificação: 30 de março</li>
+        <li>Versão final (camera ready): 12 de abril</li>
+        <li>Evento: 06 – 08 de maio</li>
+    </ul>
+    <p>Os prazos se encerram à meia-noite AoE (Anywhere on Earth).</p>
+
+    <h3>Código de ética</h3>
+    <p>
+        Seguimos o
+        <a href="https://www.acm.org/code-of-ethics" class="uline">
+            Código de Ética da ACM </a
+        >. Esperamos que todas as submissões, pesquisas subjacentes e o comportamento
+        durante o processo de revisão e a conferência estejam em conformidade com os
+        princípios e responsabilidades estabelecidos pelo código.
+    </p>
+
+    <h3>Processo de submissão</h3>
+    <p>
+        As submissões de artigos completos devem ser realizadas por meio do
+        <a href="https://jems3.sbc.org.br/events/510" class="uline">Sistema JEMS3</a>
+        (Journal and Event Management System):
+        <a href="https://jems3.sbc.org.br/events/510" class="uline">
+            https://jems3.sbc.org.br/events/510
+        </a>
+    </p>
+
+    <p>
+        O formato de submissão a ser utilizado seguirá o modelo da Sociedade Brasileira de
+        Computação. Os autores podem optar por trabalhar em um dos seguintes formatos:
+    </p>
+
+    <ul>
+        <li>
+            <a
+                href="https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip"
+                class="uline"
+            >
+                Microsoft Word e LaTeX (recomendado)
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn"
+                class="uline"
+            >
+                Overleaf
+            </a>
+        </li>
+    </ul>
+
+    <h3>Categorias de submissão</h3>
+
+    <h4>Artigos completos (15 páginas)</h4>
+    <p>
+        Projetos de pesquisa que tenham alcançado um estágio maduro e apresentem uma
+        contribuição original ao estado da arte são bem-vindos na categoria de artigos
+        completos. As submissões devem ser relevantes para o tema da conferência e não
+        podem ter sido publicadas nem estar sob avaliação em outra conferência ou revista.
+        O limite máximo é de
+        <strong>15 páginas, incluindo referências</strong>, e os artigos devem ser
+        escritos em inglês, português ou espanhol.
+    </p>
+
+    <p>
+        Os artigos serão avaliados por pelo menos dois revisores em um processo de dupla
+        anonimização. Os trabalhos submetidos devem estar anonimizados, incluindo
+        referências a trabalhos anteriores dos próprios autores.
+    </p>
+
+    <p>
+        Estamos trabalhando para garantir que os artigos aceitos sejam publicados na SBC
+        OpenLib (SOL), a biblioteca digital mantida pela Sociedade Brasileira de
+        Computação (SBC). Além disso, os melhores artigos serão recomendados para
+        submissão de uma versão estendida e publicação em uma edição especial que está
+        sendo negociada com uma revista de prestígio na área de IHC ou Ciência da
+        Computação.
+    </p>
+
+    <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img
+                            src="/assets/img/people/adrianaDamian.png"
+                            alt="Adriana Damian"
+                            class="img-fluid shadow rounded-3"
+                        />
+                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/adrianaDamian.png')"
+                    ></div>
+                </template>
+                <template #name> Dra. Adriana Lopes Damian </template>
+                <template #institution> Instituto de Pesquisas Eldorado, BR </template>
+                <template #email> </template>
+            </OrganizerItem>
+        </div>
+
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img
+                            src="/assets/img/people/liz.jpg"
+                            alt="Liz"
+                            class="img-fluid shadow rounded-3"
+                        />
+                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/liz.jpg')"
+                    ></div>
+                </template>
+                <template #name> Dra. Lizbeth Escobedo </template>
+                <template #institution> Dalhousie University, CA </template>
+                <template #email> </template>
+            </OrganizerItem>
+        </div>
+    </div>
+</template>

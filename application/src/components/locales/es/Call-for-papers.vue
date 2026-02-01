@@ -1,0 +1,246 @@
+<script>
+import OrganizerItem from "@/components/OrganizerItem.vue";
+
+import Tr from "@/i18n/translation";
+
+export default {
+    components: {
+        OrganizerItem,
+    },
+    setup() {
+        return {
+            Tr,
+        };
+    },
+};
+</script>
+
+<template>
+    <ol class="list-group list-group-numbered my-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">
+                    Fecha límite de envío:
+                </strong>
+                <strong class="text-danger"> 23 de febrero</strong><br />
+                <RouterLink
+                    :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates' })"
+                    class="uline"
+                >
+                    Ver todas las fechas importantes
+                </RouterLink>
+            </div>
+        </li>
+    </ol>
+
+    <p>
+        La
+        <a href="https://clihc2026.laihc.org/" class="uline">
+            XII Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC
+            2026)</a
+        >
+        tiene como objetivo ofrecer un foro de primer nivel que reúna a las comunidades
+        latinoamericana e internacional de investigación en Interacción Humano-Computadora
+        (HCI), para discutir y compartir ideas, métodos, enfoques y técnicas para el
+        diseño, implementación y evaluación de experiencias interactivas de usuario. De
+        acuerdo con ediciones anteriores, creemos que la HCI debe fomentar la producción
+        de tecnología que pueda ser utilizada y beneficiar al mayor número posible de
+        personas, promoviendo el intercambio intercultural y la cooperación entre personas
+        con diferentes contextos y necesidades.
+    </p>
+
+    <p>
+        Este año, CLIHC 2026 se llevará a cabo en dos ciudades, Aracaju/Brasil y
+        Oaxaca/México. Sin embargo, la
+        <strong>
+            presentación de los artículos completos se realizará únicamente en la ciudad
+            satélite de Aracaju, Brasil </strong
+        >. Por el momento, se reciben envíos en la siguiente categoría:
+    </p>
+
+    <ul>
+        <li>Artículos completos</li>
+    </ul>
+
+    <p>
+        Se invita a los autores a preparar y enviar artículos que reporten proyectos de
+        investigación, diseños innovadores, estudios de usuarios, modelos de interacción,
+        estudios de campo, estudios de caso, entre otros. Académicos, investigadores,
+        profesionales de la industria, así como estudiantes de licenciatura y posgrado,
+        son bienvenidos a participar en el proceso de selección por revisión por pares de
+        los trabajos que serán presentados en la conferencia, del 06 al 08 de mayo de
+        2026.
+    </p>
+
+    <p>
+        Los temas de los envíos pueden abarcar todos los aspectos de la HCI, incluyendo,
+        pero no limitándose a:
+    </p>
+
+    <ol>
+        <li>Computación afectiva</li>
+        <li>Interacción cerebro-computadora (BCI)</li>
+        <li>CSCW y computación social</li>
+        <li>Métodos de diseño</li>
+        <li>Educación y HCI</li>
+        <li>Interacción corporizada</li>
+        <li>HCI para el desarrollo (HCI4D)</li>
+        <li>Salud y HCI</li>
+        <li>
+            HCI e Inteligencia Artificial (por ejemplo, IA centrada en el ser humano y
+            diseño de interacción; interacción humano-IA; HCI en sistemas impulsados por
+            IA; experiencia de usuario y diseño para sistemas de IA; HCI responsable y
+            ética para aplicaciones de IA; Inteligencia Artificial Explicable - XAI)
+        </li>
+        <li>HCI en la sociedad</li>
+        <li>Inclusión y accesibilidad</li>
+        <li>Interfaces de usuario innovadoras</li>
+        <li>Evaluación de la interacción</li>
+        <li>Interfaces e interacción en videojuegos</li>
+        <li>Computación móvil</li>
+        <li>Percepción y visualización</li>
+        <li>Interacción humano-robot y telepresencia</li>
+        <li>Experiencia de usuario (UX) y usabilidad</li>
+        <li>Propiedad intelectual y HCI</li>
+    </ol>
+
+    <h3>Envío y fechas importantes</h3>
+    <p>
+        Todos los manuscritos deben enviarse completamente anonimizados. Por favor,
+        considere una audiencia internacional: evite términos locales y utilice el sistema
+        internacional de unidades. Además, considere seguir las
+        <a
+            target="_blank"
+            href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors"
+            class="uline"
+         rel="noopener noreferrer">
+            pautas de accesibilidad (edición CLIHC 2023, se abre en una nueva pestaña) </a
+        >.
+    </p>
+
+    <h4 id="cpf-dates">Fechas importantes (Artículos completos)</h4>
+    <ul>
+        <li>Envío de resúmenes: <strong class="text-danger">23 de febrero</strong></li>
+        <li>Envío de artículos: 1 de marzo</li>
+        <li>Notificación: 30 de marzo</li>
+        <li>Versión final (camera ready): 12 de abril</li>
+        <li>Evento: 06 – 08 de mayo</li>
+    </ul>
+    <p>Las fechas límite son a medianoche AoE (Anywhere on Earth).</p>
+
+    <h3>Código de ética</h3>
+    <p>
+        Nos regimos por el
+        <a href="https://www.acm.org/code-of-ethics" class="uline">
+            Código de Ética de la ACM </a
+        >. Esperamos que todos los envíos, la investigación subyacente y el comportamiento
+        durante el proceso de revisión y la conferencia cumplan con los principios y
+        responsabilidades establecidos por dicho código.
+    </p>
+
+    <h3>Proceso de envío</h3>
+    <p>
+        Los envíos de artículos completos deben realizarse a través del
+        <a href="https://jems3.sbc.org.br/events/510" class="uline">Sistema JEMS3</a>
+        (Journal and Event Management System):
+        <a href="https://jems3.sbc.org.br/events/510" class="uline">
+            https://jems3.sbc.org.br/events/510
+        </a>
+    </p>
+
+    <p>
+        El formato de envío a utilizar seguirá la plantilla de la Sociedad Brasileña de
+        Computación. Los autores pueden elegir trabajar en uno de los siguientes formatos:
+    </p>
+
+    <ul>
+        <li>
+            <a
+                href="https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip"
+                class="uline"
+            >
+                Microsoft Word y LaTeX (recomendado)
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn"
+                class="uline"
+            >
+                Overleaf
+            </a>
+        </li>
+    </ul>
+
+    <h3>Categorías de envío</h3>
+
+    <h4>Artículos completos (15 páginas)</h4>
+    <p>
+        Los proyectos de investigación que hayan alcanzado una etapa madura y presenten
+        una contribución original al estado del arte son bienvenidos a enviar trabajos en
+        la categoría de artículos completos. Los envíos deben ser relevantes para la
+        temática de la conferencia y no deben haber sido publicados ni estar bajo revisión
+        en otra conferencia o revista. La extensión máxima es de
+        <strong>15 páginas, incluidas las referencias</strong>, y los artículos deben
+        estar escritos en inglés, portugués o español.
+    </p>
+
+    <p>
+        Los artículos serán revisados por al menos dos evaluadores en un proceso de doble
+        anonimato. Los trabajos enviados deben estar anonimizados, incluyendo referencias
+        a trabajos previos de los propios autores.
+    </p>
+
+    <p>
+        Estamos trabajando para asegurar que los artículos aceptados sean publicados en
+        SBC OpenLib (SOL), la biblioteca digital mantenida por la Sociedad Brasileña de
+        Computación (SBC). Además, los mejores artículos serán recomendados para enviar
+        una versión extendida y ser publicados en una edición especial que estamos
+        negociando con una revista prestigiosa de HCI o Ciencias de la Computación.
+    </p>
+
+    <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img
+                            src="/assets/img/people/adrianaDamian.png"
+                            alt="Adriana Damian"
+                            class="img-fluid shadow rounded-3"
+                        />
+                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/adrianaDamian.png')"
+                    ></div>
+                </template>
+                <template #name> Dra. Adriana Lopes Damian </template>
+                <template #institution> Instituto de Pesquisas Eldorado, BR </template>
+                <template #email> </template>
+            </OrganizerItem>
+        </div>
+
+        <div class="col-md-4">
+            <OrganizerItem>
+                <template #image>
+                    <div class="d-block blur-shadow-image">
+                        <img
+                            src="/assets/img/people/liz.jpg"
+                            alt="Liz"
+                            class="img-fluid shadow rounded-3"
+                        />
+                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/liz.jpg')"
+                    ></div>
+                </template>
+                <template #name> Dra. Lizbeth Escobedo </template>
+                <template #institution> Dalhousie University, CA </template>
+                <template #email> </template>
+            </OrganizerItem>
+        </div>
+    </div>
+</template>
