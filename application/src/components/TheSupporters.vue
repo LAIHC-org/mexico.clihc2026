@@ -23,7 +23,7 @@ export default {
                         </p>
                     </div>
                 </div>
-
+                <!--
                 <SponsorItem>
                     <template #image>
                         <img
@@ -46,7 +46,7 @@ export default {
                         >
                     </template>
                 </SponsorItem>
-                
+                -->
             </div>
         </div>
     </section>
