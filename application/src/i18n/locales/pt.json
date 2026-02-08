@@ -14,15 +14,15 @@
         "for_authors_title": "Para autores",
         "for_authors": "Para autores",
         "organizers": "Organizadores",
-        "cfp": "Chamada de trabalhos",
+        "cfp": "Chamada de artigos curtos",
         "cfp_message": "Prazo (resumos): 23 de fevereiro de 2026",
-        "cpt": "Chamada para pôsteres",
+        "cpt": "Chamada para pôsteres (México)",
         "cpt_message": "Prazo: 11 de agosto de 2023 PRORROGADA",
-        "cwt": "Chamada para workshops e tutoriais",
+        "cwt": "Chamada para workshops e tutoriais (México)",
         "cwt_message": "Prazo: 11 de agosto de 2023 PRORROGADA",
-        "sdc": "Competição de design estudantil",
+        "sdc": "Competição de design estudantil (México)",
         "sdc_message": "Prazo: 11 de agosto de 2023 PRORROGADA",
-        "cgc": "Colóquio de pós-graduação",
+        "cgc": "Colóquio de pós-graduação (México)",
         "cgc_message": "Prazo: 11 de agosto de 2023 PRORROGADA",
         "accessibility_for_autors": "Recomendações de acessibilidade para autores",
         "accessibility_for_autors_message": "Ajude-nos a maximizar a experiência para todos",
@@ -47,13 +47,13 @@
         "back_to_top": "Voltar ao topo da página"
     },
     "jumbotron":{
-        "conference": "XII Conferência Latino-Americana de Interação Humano–Computador",
-        "date": "De 6 a 8 de maio de 2026",
-        "button": "Chamada para participação"
+        "conference": "Evento presencial oficial da XII Conferência Latino-Americana de Interação Humano-Computador.",
+        "date": "De 27 a 29 de maio de 2026",
+        "button": "Participe do evento no México"
     },
     "about":{
-        "about_title": "Sobre o CLIHC",
-        "about_text": "A Conferência Latino-Americana de Interação Humano-Computador (CLIHC) é organizada pela Comunidade Latino-Americana de Interação Humano-Computador da SIGCHI (LAIHC). O CLIHC é uma conferência de destaque que reúne as comunidades de pesquisa em IHC da América Latina e do mundo para discutir e trocar ideias, métodos, abordagens e técnicas para o design de experiências interativas de usuário. Também incentiva o intercâmbio intercultural e a cooperação entre pessoas com diferentes origens e necessidades. Esta conferência teve sua origem no Rio de Janeiro em 2003 (Brasil), com edições seguintes em Cuernavaca 2005 (México), Rio de Janeiro 2007 (Brasil), Mérida 2009 (México), Porto de Galinhas 2011 (Brasil), Guanacaste 2013 (Costa Rica), Córdoba 2015 (Argentina), Antigua 2017 (Guatemala), Cidade do Panamá 2019 (Panamá), Conferência Virtual 2021 (on-line) e Puebla 2023 (México).",
+        "about_title": "O que é o Evento México da CLIHC 2026?",
+        "about_text": "<p>O Evento México da CLIHC 2026 é uma <strong>sede presencial oficial</strong> da <strong>XII Conferência Latino-Americana de Interação Humano-Computador (CLIHC 2026)</strong>, organizada como parte da edição 2026 do congresso, que ocorre em um <strong>formato distribuído com duas sedes presenciais na América Latina</strong>.</p><p>O Evento México tem como objetivo ampliar a participação da comunidade latino-americana de Interação Humano-Computador (IHC), oferecendo espaços de encontro, discussão e colaboração por meio de atividades acadêmicas, formativas e industriais. Esta sede conta com <strong>programação, atividades e organização local próprias</strong>, articuladas academicamente com o conjunto da conferência.</p><p>No modelo distribuído da CLIHC 2026, <strong>alguns processos acadêmicos e editoriais</strong>, como a gestão dos long papers e das atas oficiais, são coordenados de forma central para garantir coerência e qualidade acadêmica. De forma complementar, o Evento México desenvolve <strong>chamadas e atividades locais</strong>, como short papers, pôsteres, workshops e tutoriais, além de uma agenda presencial organizada por seu comitê local.</p><p>Dessa forma, o Evento México contribui ativamente para a diversidade acadêmica e profissional da CLIHC 2026, fortalecendo o intercâmbio entre academia, indústria e sociedade a partir de seu contexto regional.</p>",
         "call": "Chamada para participação",
         "registration": "Chamada para registro",
         "proceedings": "Proceedings",
@@ -63,9 +63,11 @@
     },
     "organizers": {
         "title": "Organizadores",
-        "intro": "O objetivo principal da Conferência Latino-Americana de Interação Humano-Computador (CLIHC) 2026 é promover a colaboração, discussão e troca de conhecimentos entre pesquisadores de HCI internacionais e latino-americanos. A conferência tem como objetivo promover o design e desenvolvimento de inteligência artificial centrados no ser humano e culturalmente conscientes, fornecendo uma plataforma para a apresentação e discussão de novas ideias, métodos e técnicas para o design de experiências interativas para o usuário. A conferência será realizada em Puebla, México, e é organizada por um grupo diversificado de especialistas da América Latina e de outras regiões.",
-        "general_committee_link": "Comitê geral",
+        "intro": "<p>O Evento México da Conferência Latino-Americana de Interação Humano-Computador (CLIHC) 2026 é uma sede presencial oficial organizada como parte da edição 2026 do congresso, cuja sede geral ocorre em Aracaju, Brazil. Este evento tem como objetivo fortalecer a participação da comunidade acadêmica, profissional e industrial no México e na região, promovendo espaços de colaboração, discussão e intercâmbio de conhecimento no campo da Interação Humano-Computador.</p><p>O Evento México contribui para os objetivos gerais do CLIHC 2026 por meio de uma programação acadêmica e formativa própria, que inclui chamadas locais, sessões presenciais e atividades voltadas ao diálogo entre academia, indústria e sociedade, com uma organização local responsável por seu desenvolvimento acadêmico e logístico.</p>",
+        "general_committee_link": "Comitê geral (Brasil)",
         "general_committee_title": "Comitê geral",
+        "local_committee_link": "Comitê local (Mexico)",
+        "local_committee_title": "Comitê local (México)",
         "program_committee_link": "Comitê de programa",
         "program_committee_title": "Comitê de programa",
         "conference_chairs_title": "Coordenação Geral da Conferência",
@@ -112,12 +114,12 @@
         "accessible_video": "Recomendações para a criação de vídeos acessíveis"
     },
     "calls": {
-        "title": "Convocatória de participação",
-        "cfp": "Chamada de trabalhos",
-        "cpt": "Chamada para pôsteres",
-        "cwt": "Chamada para workshops e tutoriais",
-        "sdc": "Competição de design estudantil",
-        "cgc": "Colóquio de pós-graduação"
+        "title": "Convocatória de participação (Mexico)",
+        "cfp": "Chamada de artigos curtos (Mexico)",
+        "cpt": "Chamada para pôsteres (Mexico)",
+        "cwt": "Chamada para workshops e tutoriais (Mexico)",
+        "sdc": "Competição de design estudantil (Mexico)",
+        "cgc": "Colóquio de pós-graduação (Mexico)"
     },
     "register": {
         "register_button": "Registre seu comprovante de pagamento"
@@ -145,6 +147,8 @@
         "student_design_competition": "Competição de Design Estudantil"
     },
     "soon": {
-        "speakers": "Próximos palestrantes serão anunciados em breve."
+        "speakers": "Próximos palestrantes serão anunciados em breve.",
+        "sponsors": "Os próximos patrocinadores serão anunciados em breve.",
+        "organization": "Os próximos organizadores serão anunciados em breve."
     }
 }

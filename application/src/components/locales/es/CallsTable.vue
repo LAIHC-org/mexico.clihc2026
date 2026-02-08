@@ -14,11 +14,10 @@
         <div class="ms-2 me-auto">
             <div class="fw-bold">
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers'})" class="uline">
-                    Convocatoria de trabajos (CFP)
+                    Convocatoria de artículos cortos
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Envío de resúmenes:</strong> 23 de febrero<br>
-            <strong class="text-primary text-gradient">Envío de artículos:</strong> 1 de marzo<br>
+            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> Proximamente<br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">

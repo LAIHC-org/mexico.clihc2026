@@ -14,11 +14,10 @@
         <div class="ms-2 me-auto">
             <div class="fw-bold">
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" class="uline">
-                    Call for papers (CFP)
+                    Call for short papers
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Abstract submission:</strong> February 23<br>
-            <strong class="text-primary text-gradient">Paper submission:</strong> March 1<br>
+            <strong class="text-primary text-gradient">Deadline for submission:</strong> Upcoming<br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
