@@ -42,9 +42,6 @@ export default {
             <div class="container py-7 postion-relative z-index-2 position-relative">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">
-                        <a href="http://www.laihc.org/" class="uline lightLink">
-                          <img src="/assets/img/logos/laihc-blanco.svg" alt="LaIHC" class="logo-laihc">
-                        </a>
                         <template v-if="currentComponent">
                             <component :is="currentComponent" />
                         </template>                        
