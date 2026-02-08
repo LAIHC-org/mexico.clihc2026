@@ -1,15 +1,15 @@
 <script>
-import Tr from '@/i18n/translation'
-import SponsorItem from '@/components/SponsorItem.vue'
+import Tr from "@/i18n/translation";
+import SponsorItem from "@/components/SponsorItem.vue";
 
 export default {
     components: {
-        SponsorItem
-    },    
+        SponsorItem,
+    },
     setup() {
-        return { Tr }
-    }
-}
+        return { Tr };
+    },
+};
 </script>
 <template>
     <section>
@@ -24,23 +24,54 @@ export default {
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="row">                      
-                        {{ $t("soon.sponsors") }}
-                        <!--
+                    <div class="row">
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/sponsors/fapitec_se.png" alt="Fundação de Apoio à Pesquisa e à Inovação Tecnológica do Estado de Sergipe (FAPITEC/SE)" class="img-fluid shadow rounded-3">
+                                <img
+                                    src="/assets/img/sponsors/occe.png"
+                                    alt="Oficina de Convenciones, Congresos y Eventos de Oaxaca"
+                                    class="img-fluid shadow rounded-3"
+                                />
                             </template>
                             <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;/assets/img/sponsors/fapitec_se.png&quot;);">
-                                </div>
-                            </template>                                
+                                <div
+                                    class="colored-shadow"
+                                    style="
+                                        background-image: url('/assets/img/sponsors/occe.png');
+                                    "
+                                ></div>
+                            </template>
                             <template #name>
-                                <a class="uline" href="https://fapitec.se.gov.br/">FAPITEC/SE</a>
+                                <a class="uline" href="https://www.oaxaca.gob.mx/occe/"
+                                    >Oficina de Convenciones, Congresos y Eventos de
+                                    Oaxaca</a
+                                >
                             </template>
                         </SponsorItem>
-                        -->
+
+                        <SponsorItem>
+                            <template #image>
+                                <img
+                                    src="/assets/img/sponsors/educacion.png"
+                                    alt="Secretaría de Educación Pública del Estado de Oaxaca"
+                                    class="img-fluid shadow rounded-3"
+                                />
+                            </template>
+                            <template #image-shadow>
+                                <div
+                                    class="colored-shadow"
+                                    style="
+                                        background-image: url('/assets/img/sponsors/educacion.png');
+                                    "
+                                ></div>
+                            </template>
+                            <template #name>
+                                <a class="uline" href="https://www.oaxaca.gob.mx/sep/"
+                                    >Secretaría de Educación Pública del Estado de
+                                    Oaxaca</a
+                                >
+                            </template>
+                        </SponsorItem>
                     </div>
                 </div>
             </div>

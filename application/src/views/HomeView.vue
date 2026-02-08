@@ -14,9 +14,9 @@ import TheSupport from '@/components/Support.vue'
   <TheJumbotron />
   <TheAboutSection />
   <TheSpeakers />
-  <TheSpetialThanks />
   <TheDescription />
   <TheOrganization />
+  <TheSpetialThanks />
   <!-- <TheCoordinationOfProgram /> -->
   <!-- <TheSupporters /> -->
   <!-- TheVirtualVenues /> -->

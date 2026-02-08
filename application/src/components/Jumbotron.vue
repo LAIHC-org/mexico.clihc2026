@@ -86,7 +86,7 @@ export default {
                                 <p class="lead mt-2">
                                     <strong>
                                         {{ $t("jumbotron.date") }} <br />
-                                        Santo Domingo, Oaxaca, México<br />
+                                        Oaxaca, México<br />
                                     </strong>
                                 </p>
 

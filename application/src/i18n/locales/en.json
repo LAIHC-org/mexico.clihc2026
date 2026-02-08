@@ -11,9 +11,18 @@
         "about_title": "About This Conference",
         "about": "About CLIHC",
         "home": "Home",
+        "microsite": "CLIHC 2026",
+        "calls": "Calls",
+        "calls_general": "General calls (CLIHC 2026)",
+        "calls_short_papers": "Call for Short Papers (Mexico)",
+        "calls_hackathon": "Call for Hackathon",
+        "for_participants": "For participants",
         "for_authors_title": "For Authors",
         "for_authors": "For authors",
         "organizers": "Organizers",
+        "organizers_general": "General organization",
+        "organizers_local": "Local organization",
+        "central_site": "Central site",
         "cfp": "Call for short papers",
         "cfp_message": "Abstract deadline: February 23, 2026",
         "cpt": "Call for poster track (México)",
@@ -40,6 +49,8 @@
         "schedule_message": "Check the schedule of the conference",
         "keynotes": "Keynote speakers",
         "keynotes_message": "From de international HCI community",
+        "industry_government_day": "Industry and Government Day",
+        "hackathon": "Hackathon",
         "accepted_papers": "Accepted papers",
         "accepted_papers_message": "",
         "pending": "Pending",
@@ -63,11 +74,12 @@
     },
     "organizers": {
         "title": "Organizers",
-        "intro": "<p>The Mexico Event of the Latin American Conference on Human-Computer Interaction (CLIHC) 2026 is an official in-person venue organized as part of the 2026 edition of the conference, whose main venue takes place in Aracaju, Brazil. This event aims to strengthen the participation of the academic, professional, and industrial communities in Mexico and the region, promoting spaces for collaboration, discussion, and knowledge exchange in the field of Human-Computer Interaction.</p><p>The Mexico Event contributes to the overall goals of CLIHC 2026 through its own academic and educational program, which includes local calls, in-person sessions, and activities aimed at fostering dialogue between academia, industry, and society, with a local organization responsible for its academic and logistical development.</p>",
-        "general_committee_link": "General committee (Brazil)",
+        "intro": "This page presents the Local Organizing Committee for the Oaxaca, Mexico venue of CLIHC 2026. The committee is responsible for planning and coordinating local activities, event logistics, and engagement with the academic, professional, and institutional communities at the Oaxaca site.",
+        "pending_note": "Pending. The local organizing committee will be announced soon.",
+        "general_committee_link": "General committee",
         "general_committee_title": "General Committee",
-        "local_committee_link": "Local committee (Mexico)",
-        "local_committee_title": "Local Committee (Mexico)",        
+        "local_committee_link": "Local committee (Oaxaca, Mexico)",
+        "local_committee_title": "Local Committee (Oaxaca, Mexico)",        
         "program_committee_link": "Program committee",
         "program_committee_title": "Program Committee",
         "conference_chairs_title": "General Chairs",
@@ -136,7 +148,6 @@
         "coordination_message": "The academic program is coordinated by representatives from the following institutions.",
         "supporters": "Supported by",
         "supporters_message": "This conference is made thanks to the support of the following institutions."
-
     },
     "accepted_papers": {
         "title": "Accepted Papers",
@@ -149,6 +160,8 @@
     "soon": {
         "speakers": "Upcoming speakers will be announced soon.",
         "sponsors": "Upcoming sponsors will be announced soon.",
-        "organization": "Upcoming organizers will be announced soon."
+        "organization": "Upcoming organizers will be announced soon.",
+        "page_title": "Coming soon",
+        "page_body": "Coming soon"
     }
 }

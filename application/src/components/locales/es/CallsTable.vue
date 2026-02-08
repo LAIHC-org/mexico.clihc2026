@@ -13,8 +13,22 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers'})" class="uline">
-                    Convocatoria de artículos cortos
+                <a
+                    class="uline"
+                    :href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {{ $t("nav.calls_general") }}
+                </a>
+            </div>
+        </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-short-papers'})" class="uline">
+                    {{ $t("nav.calls_short_papers") }}
                 </RouterLink>
             </div>
             <strong class="text-primary text-gradient">Fecha límite de envío:</strong> Proximamente<br>
@@ -23,39 +37,9 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters'})" class="uline">
-                    Convocatoria de pósteres (CPT)
-                </RouterLink>                
-            </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> Proximamente<br>
-        </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <div class="fw-bold">
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" class="uline">
-                Convocatoria de talleres y tutoriales (CWT)
-            </RouterLink>
-            </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> Proximamente<br>
-        </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <div class="fw-bold">
-            <RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" class="uline">
-                Competencia de diseño para estudiantes (SDC)
-            </RouterLink>
-            </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> Proximamente<br>
-        </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <div class="fw-bold">
-            <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="uline">
-                Coloquio de graduados (GC)
-            </RouterLink>
+                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-hackathon' })" class="uline">
+                    {{ $t("nav.calls_hackathon") }}
+                </RouterLink>
             </div>
             <strong class="text-primary text-gradient">Fecha límite de envío:</strong> Proximamente<br>
         </div>
