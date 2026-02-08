@@ -25,7 +25,8 @@ export default {
                 </div>
                 <div class="col-lg-9">
                     <div class="row">                      
-
+                        {{ $t("soon.organization") }}
+                        <!--
                         <SponsorItem>
                             <template #image>
                                 <img src="/assets/img/logos/uninassau.png" alt="Centro Universitário Maurício de Nassau" class="img-fluid shadow rounded-3">
@@ -53,6 +54,7 @@ export default {
                                 <a class="uline" href="https://www.ufs.br/">Universidade Federal de Sergipe</a>
                             </template>
                         </SponsorItem>
+                        -->
                     </div>
                 </div>
             </div>

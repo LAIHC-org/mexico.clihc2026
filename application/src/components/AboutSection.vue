@@ -17,9 +17,7 @@
 					<div class="col-lg-8">
 						<!-- <h2 class="text-dark mb-0">Titulo Negro</h2> -->
 						<h2 id="about_clihc" class="text-primary text-gradient text-center">{{ $t("about.about_title") }}</h2>
-						<p>
-							{{ $t("about.about_text") }}
-						</p>
+						<div v-html="$t('about.about_text')" />
 					</div>
 				</div>
 			</div>
