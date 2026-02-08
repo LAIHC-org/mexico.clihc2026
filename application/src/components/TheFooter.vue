@@ -12,137 +12,110 @@
 <template>
     <footer class="footer pt-3 mt-5">
         <div class="container mt-3">
-            <div class=" row">
-                <div class="col-md-3 mb-4 ms-auto">                    
+            <div class="row">
+                <div class="col-sm-6 col-md-3 mb-4">
                     <div>
-                        <h2 class="text-gradient text-secondary font-weight-bolder fs-5">{{ $t("nav.sitemap") }}</h2>
-                    </div>
-                    <div>
-                        <ul class="d-flex flex-row ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.facebook.com/clihc" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-facebook text-lg opacity-8"></i>
-                                    <span class="visually-hidden">{{ $t("nav.facebook") }}</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://x.com/clihc2026" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-x-twitter text-lg opacity-8"></i>
-                                    <span class="visually-hidden">{{ $t("nav.twitter") }}</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="https://www.laihc.org/"><img src="/assets/img/logos/laihc-blanco.svg" alt="LaIHC" class="mt-2" height="50" /></a>
-                </div>
-                
-                <div class="col-sm-4 col-md-3 mb-4">
-                    <div>
-                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.about_title") }}</h3>
+                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.calls") }}</h3>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'home', hash: '#about_clihc'})" class="nav-link uline">
-                                    {{ $t("nav.about") }}
-                                </RouterLink>
-                                <RouterLink :to="Tr.i18nRoute({ name: 'organizers'})" class="nav-link uline">
-                                    {{ $t("nav.organizers") }}
-                                </RouterLink>                                
-                            </li>                            
-                            <li class="nav-item">
-                                <RouterLink class="nav-link uline" :to="Tr.i18nRoute({ name: 'keynote-speakers' })">
-                                    {{ $t("nav.keynotes") }}
-                                </RouterLink>
-                            </li>
-                            <!--
-                            <li class="nav-item">
-                                <a class="nav-link uline" href="./video-archives">
-                                    Video archives
+                                <a
+                                    class="nav-link uline"
+                                    :href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {{ $t("nav.calls_general") }}
                                 </a>
                             </li>
-                            -->                          
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-sm-4 col-md-3 mb-4">
-                    <div>
-                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.for_authors_title") }}</h3>
-                        <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })" class="nav-link uline">
-                                    {{ $t("nav.cfp") }}
+                                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-short-papers' })" class="nav-link uline">
+                                    {{ $t("nav.calls_short_papers") }}
                                 </RouterLink>
                             </li>
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters' })" class="nav-link uline">
-                                    {{ $t("nav.cpt") }}
-                                </RouterLink>                                
-                            </li>                            
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-workshops-and-tutorials' })" class="nav-link uline">
-                                    {{ $t("nav.cwt") }}
+                                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-hackathon' })" class="nav-link uline">
+                                    {{ $t("nav.calls_hackathon") }}
                                 </RouterLink>
                             </li>
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'student-design-competition' })" class="nav-link uline">
-                                    {{ $t("nav.sdc") }}
-                                </RouterLink>
-                            </li> 
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium' })" class="nav-link uline">
-                                    {{ $t("nav.cgc") }}
-                                </RouterLink>
-                            </li>
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-recommendations-for-authors'})" class="nav-link uline">
-                                    {{ $t("nav.accessibility_for_autors") }}
-                                </RouterLink>
-                            </li>
-                            
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-md-3 mb-1">
+                <div class="col-sm-6 col-md-3 mb-4">
                     <div>
-                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.for_attendees_title") }}</h3>
+                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.for_participants") }}</h3>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" 
-                                    class="nav-link uline"
-                                >
+                                <RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" class="nav-link uline">
                                     {{ $t("nav.getting_started") }}
                                 </RouterLink>
-                            </li>                      
+                            </li>
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" 
-                                    class="nav-link uline"
-                                >
+                                <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" class="nav-link uline">
                                     {{ $t("nav.rates_and_registration") }}
                                 </RouterLink>
                             </li>
-                            <!--
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div>
+                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.program") }}</h3>
+                        <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'accessibility-FAQ' })" 
-                                    class="nav-link uline"
-                                >
-                                    {{ $t("nav.accessibility_faqs") }}
-                                </RouterLink>
-                            </li>
-                            <li class="nav-item">
-                                <RouterLink class="nav-link uline" :to="Tr.i18nRoute({ name: 'accepted-papers' })">
-                                    {{ $t("nav.accepted_papers") }}
-                                </RouterLink>
-                            </li>
-                            -->
-                            <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" 
-                                    class="nav-link uline"
-                                >
+                                <RouterLink :to="Tr.i18nRoute({ name: 'schedule' })" class="nav-link uline">
                                     {{ $t("nav.schedule") }}
                                 </RouterLink>
                             </li>
-                            
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers' })" class="nav-link uline">
+                                    {{ $t("nav.keynotes") }}
+                                </RouterLink>
+                            </li>
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'industry-government-day' })" class="nav-link uline">
+                                    {{ $t("nav.industry_government_day") }}
+                                </RouterLink>
+                            </li>
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'hackathon' })" class="nav-link uline">
+                                    {{ $t("nav.hackathon") }}
+                                </RouterLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div>
+                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.organizers") }}</h3>
+                        <ul class="flex-column ms-n3 nav">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link uline"
+                                    :href="`https://clihc2026.laihc.org/${Tr.currentLocale}/organizers`"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {{ $t("nav.organizers_general") }}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <RouterLink :to="Tr.i18nRoute({ name: 'organizers' })" class="nav-link uline">
+                                    {{ $t("nav.organizers_local") }}
+                                </RouterLink>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link uline"
+                                    :href="`https://clihc2026.laihc.org/${Tr.currentLocale}`"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {{ $t("nav.central_site") }}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -153,7 +126,7 @@
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2026.1.0.9</a>
+                            <a class="uline" href="CHANGELOG.md">v2026.1.0.0.m</a>
                         </p>
                     </div>
                 </div>
