@@ -25,36 +25,19 @@ export default {
                 </div>
                 <div class="col-lg-9">
                     <div class="row">                      
-                        {{ $t("soon.organization") }}
-                        <!--
                         <SponsorItem>
                             <template #image>
-                                <img src="/assets/img/logos/uninassau.png" alt="Centro Universitário Maurício de Nassau" class="img-fluid shadow rounded-3">
+                                <img src="/assets/img/logos/utm.png" alt="Universidad Tecnológica de la Mixteca" class="img-fluid shadow rounded-3">
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;/assets/img/logos/uninassau.png&quot;);">
+                                    style="background-image: url(&quot;/assets/img/logos/utm.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
-                                <a class="uline" href="https://www.uninassau.edu.br/">Centro Universitário Maurício de Nassau</a>
-                            </template>
-                        </SponsorItem> 
-
-                        <SponsorItem>
-                            <template #image>
-                                <img src="/assets/img/logos/ufs.png" alt="Universidade Federal de Sergipe" class="img-fluid shadow rounded-3">
-                            </template>
-                            <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;/assets/img/logos/ufs.png&quot;);">
-                                </div>
-                            </template>                                
-                            <template #name>
-                                <a class="uline" href="https://www.ufs.br/">Universidade Federal de Sergipe</a>
+                                <a class="uline" href="https://www.utm.mx/web/">Universidad Tecnológica de la Mixteca</a>
                             </template>
                         </SponsorItem>
-                        -->
                     </div>
                 </div>
             </div>

@@ -1,13 +1,20 @@
+<script>
+import Tr from '@/i18n/translation'
+
+export default {
+  setup() {
+    return { Tr }
+  }
+}
+</script>
+
 <template>
-    <h3 class="text-white mb-0">Invites You to Join CLIHC, the Premier Forum for HCI Researchers and Practitioners in
-        Latin America.</h3>
-    <!--
-    <p class="text-white mt-3 mb-3">
-        The Latin American Conference on Human-Computer Interaction (CLIHC) is the premier forum for researchers and
-        practitioners in Latin America to present and discuss the latest advances in Human-Computer Interaction. Organized
-        by the Latin American Association on Human-Computer Interaction (<a href="http://www.laihc.org/"
-            class="uline lightLink">LAIHC</a>), this biennial conference brings together
-        leading experts to explore innovative approaches and emerging trends in the field.
-    </p>
-    -->
+  <h3 class="text-white mb-0">CLIHC 2026 Hackathon – Mexico Venue</h3>
+  <p class="text-white mt-3 mb-3">
+    <strong>Hands-on HCI innovation.</strong>
+    A collaborative space to prototype, experiment, and create interactive solutions in real time.
+  </p>
+  <RouterLink :to="Tr.i18nRoute({ name: 'call-for-hackathon' })" class="btn btn-lg bg-gradient-yellow btn-round">
+    {{ $t("nav.calls_hackathon") }}
+  </RouterLink>
 </template>

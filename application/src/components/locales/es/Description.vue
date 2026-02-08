@@ -1,13 +1,20 @@
+<script>
+import Tr from '@/i18n/translation'
+
+export default {
+  setup() {
+    return { Tr }
+  }
+}
+</script>
+
 <template>
-    <h3 class="text-white mb-0">te invita a unirte a CLIHC, el foro principal para investigadores y profesionales de
-        HCI en América Latina.</h3>
-    <!--
-    <p class="text-white mt-3 mb-3">
-        La Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC) es el foro principal para investigadores y
-        profesionales en América Latina para presentar y discutir los últimos avances en Interacción Humano-Computadora.
-        Organizada por la Asociación Latinoamericana de Interacción Humano-Computadora (<a href="http://www.laihc.org/"
-        class="uline lightLink">LAIHC</a>), esta conferencia bienal reúne a destacados expertos para explorar enfoques
-    innovadores y tendencias emergentes en el campo.
-    </p>
-    -->
+  <h3 class="text-white mb-0">Hackathon CLIHC 2026 – Sede México</h3>
+  <p class="text-white mt-3 mb-3">
+    <strong>Innovación en HCI con las manos.</strong>
+    Un espacio colaborativo para prototipar, experimentar y crear soluciones interactivas en tiempo real.
+  </p>
+  <RouterLink :to="Tr.i18nRoute({ name: 'call-for-hackathon' })" class="btn btn-lg bg-gradient-yellow btn-round">
+    {{ $t("nav.calls_hackathon") }}
+  </RouterLink>
 </template>
