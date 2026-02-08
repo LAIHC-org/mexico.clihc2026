@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0.1.m] - 2026-02-8
+
+### Added
+
+- Added a hackathon call-to-action button in the home description for ES/EN/PT.
+
+### Changed
+
+- Updated the home description copy to promote the CLIHC 2026 hackathon Mexico venue in ES/EN/PT.
+- Removed the LAIHC logo from the home description section.
+
 ## [2026.1.0.0.m] - 2026-02-8
 
 ### Added
