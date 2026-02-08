@@ -82,8 +82,6 @@
 											<a
 												class="dropdown-item border-radius-md"
 												:href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`"
-												target="_blank"
-												rel="noopener noreferrer"
 											>
 												<div class="d-flex">
 													<div>
@@ -255,8 +253,6 @@
 											<a
 												class="dropdown-item border-radius-md"
 												:href="`https://clihc2026.laihc.org/${Tr.currentLocale}/organizers`"
-												target="_blank"
-												rel="noopener noreferrer"
 											>
 												<div class="d-flex">
 													<div>
@@ -288,8 +284,6 @@
 									<a
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										:href="`https://clihc2026.laihc.org/${Tr.currentLocale}`"
-										target="_blank"
-										rel="noopener noreferrer"
 									>
 										{{ $t("nav.central_site") }}
 									</a>

@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Aligned the Mexico footer structure with the Brazil layout, including sitemap and social links.
+- Adjusted navbar external conference links to open in the same tab.
+- Fixed footer organizer translation keys and added local call links.
+
+## [2026.1.0.1.m] - 2026-02-8
+
+### Added
+
+- Added a hackathon call-to-action button in the home description for ES/EN/PT.
+
+### Changed
+
+- Updated the home description copy to promote the CLIHC 2026 hackathon Mexico venue in ES/EN/PT.
+- Removed the LAIHC logo from the home description section.
+
+## [2026.1.0.0.m] - 2026-02-8
+
+### Added
+
+- Adapted the site to represent the CLIHC 2026 Mexico venue.
+- Added Mexico-specific calls, agenda, and local activities.
+- Included local venue information and organizing committee.
+
+### Changed
+
+- Updated site content and navigation to reflect the Mexico event context.
+- Reconfigured repository remote and deployment target for the Mexico microsite.
+
 ## [2026.1.0.9] - 2026-01-13
 
 ### Added
