@@ -28,6 +28,7 @@ const router = createRouter({
           },
         },
         /*Begin: Nuevos */
+        /*
         {
           path: 'call-for-papers',
           name: 'call-for-papers',
@@ -68,13 +69,34 @@ const router = createRouter({
             title: "CLIHC 2026 - Graduate colloquium",
           },
         },
+        */
         /*End: Nuevos */      
+        /*
         {
           path: 'accessibility-recommendations-for-authors',
           name: 'accessibility-recommendations-for-authors',
           component: () => import('../views/AccessibilityForAuthorsView.vue'), 
           meta: {
             title: "CLIHC 2026 - Accessibility recommendations for authors",
+          },
+        },
+        */
+        {
+          path: 'call-for-short-papers',
+          name: 'call-for-short-papers',
+          component: () => import('../views/ComingSoonView.vue'),
+          meta: {
+            title: "CLIHC 2026 - Call for short papers (Mexico)",
+            pageTitleKey: "nav.calls_short_papers",
+          },
+        },
+        {
+          path: 'call-for-hackathon',
+          name: 'call-for-hackathon',
+          component: () => import('../views/ComingSoonView.vue'),
+          meta: {
+            title: "CLIHC 2026 - Call for hackathon",
+            pageTitleKey: "nav.calls_hackathon",
           },
         },
         {
@@ -102,13 +124,33 @@ const router = createRouter({
           },
         },
         {
+          path: 'industry-government-day',
+          name: 'industry-government-day',
+          component: () => import('../views/ComingSoonView.vue'),
+          meta: {
+            title: "CLIHC 2026 - Industry and Government Day",
+            pageTitleKey: "nav.industry_government_day",
+          },
+        },
+        {
+          path: 'hackathon',
+          name: 'hackathon',
+          component: () => import('../views/ComingSoonView.vue'),
+          meta: {
+            title: "CLIHC 2026 - Hackathon",
+            pageTitleKey: "nav.hackathon",
+          },
+        },
+        /*
+        {
           path: 'accepted-papers',
           name: 'accepted-papers',
           component: () => import('../views/AcceptedPapersView.vue'), 
           meta: {
             title: "CLIHC 2026 - Accepted papers",
           },
-        },    
+        },
+        */    
         {
           path: 'getting-started',
           name: 'getting-started',
@@ -125,6 +167,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Registration",
           },
         },
+        /*
         {
           path: 'accessibility-FAQ',
           name: 'accessibility-FAQ',
@@ -141,6 +184,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Video archives",
           },
         }
+        */
       ]
     },
     {
