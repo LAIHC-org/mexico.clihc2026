@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Aligned the Mexico footer structure with the Brazil layout, including sitemap and social links.
+- Adjusted navbar external conference links to open in the same tab.
+- Fixed footer organizer translation keys and added local call links.
+
 ## [2026.1.0.1.m] - 2026-02-8
 
 ### Added
