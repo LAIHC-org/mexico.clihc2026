@@ -1,5 +1,6 @@
 <script>
 import TheHeader from '@/components/Header.vue';
+import Breadcrumbs from '@/components/Breadcrumbs.vue';
 
 import Tr from '@/i18n/translation'
 
@@ -8,7 +9,8 @@ import { useI18n } from 'vue-i18n'
 
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    Breadcrumbs
   },
   setup() {
     const { locale } = useI18n()
@@ -47,6 +49,7 @@ export default {
       {{ $t("calls.cfp") }}
     </template>
   </TheHeader>
+  <Breadcrumbs />
 
   <section>
     <div class="container">

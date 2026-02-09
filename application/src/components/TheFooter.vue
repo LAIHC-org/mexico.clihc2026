@@ -19,7 +19,7 @@
                     </div>
                     <ul class="flex-column ms-n3 nav">
                         <li class="nav-item">
-                            <a class="nav-link uline" href="/">{{ $t("nav.home_local") }}</a>
+                            <a class="nav-link uline" href="/">{{ $t("nav.home") }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link uline" :href="`https://clihc2026.laihc.org/${Tr.currentLocale}`">

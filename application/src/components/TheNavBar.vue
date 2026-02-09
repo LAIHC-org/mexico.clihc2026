@@ -89,6 +89,9 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
 															{{ $t("nav.calls_general") }}
 														</span>
+														<span class="text-sm text-dark">
+															{{ $t("nav.calls_general_message") }}
+														</span>
 													</div>
 												</div>
 											</a>
@@ -103,6 +106,9 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
 															{{ $t("nav.calls_short_papers") }}
 														</span>
+														<span class="text-sm text-dark">
+															{{ $t("about.upcoming") }}
+														</span>
 													</div>
 												</div>
 											</RouterLink>											
@@ -116,6 +122,9 @@
 														<span
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
 															{{ $t("nav.calls_hackathon") }}
+														</span>
+														<span class="text-sm text-dark">
+															{{ $t("about.upcoming") }}
 														</span>
 													</div>
 												</div>
