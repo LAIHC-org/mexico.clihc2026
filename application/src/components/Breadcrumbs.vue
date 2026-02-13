@@ -13,7 +13,6 @@ const PARENT_GROUPS = {
 
 const PAGE_MAP = {
   'call-for-participation': { parent: PARENT_GROUPS.calls, currentKey: 'nav.calls_general' },
-  'call-for-short-papers': { parent: PARENT_GROUPS.calls, currentKey: 'nav.calls_short_papers' },
   'call-for-hackathon': { parent: PARENT_GROUPS.calls, currentKey: 'nav.calls_hackathon' },
   'getting-started': { parent: PARENT_GROUPS.participants, currentKey: 'nav.getting_started' },
   'registration': { parent: PARENT_GROUPS.participants, currentKey: 'nav.rates_and_registration' },

@@ -56,13 +56,6 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-short-papers' })"
-                                    class="nav-link uline"
-                                >
-                                    {{ $t("nav.calls_short_papers") }}
-                                </RouterLink>
-                            </li>
-                            <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-hackathon' })"
                                     class="nav-link uline"
                                 >
