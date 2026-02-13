@@ -7,11 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0.2.m] - 2026-02-13
+
+### Added
+
+- Added dynamic breadcrumbs across internal pages, including translations for the "Not found" label.
+
 ### Changed
 
 - Aligned the Mexico footer structure with the Brazil layout, including sitemap and social links.
 - Adjusted navbar external conference links to open in the same tab.
 - Fixed footer organizer translation keys and added local call links.
+
+### Removed
+
+- Removed the local "Call for short papers" route and its links from footer, navbar, calls tables, and breadcrumb map.
 
 ## [2026.1.0.1.m] - 2026-02-8
 
