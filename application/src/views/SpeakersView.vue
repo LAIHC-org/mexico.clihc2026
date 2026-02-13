@@ -1,5 +1,6 @@
 <script>
 import TheHeader from '@/components/Header.vue';
+import Breadcrumbs from '@/components/Breadcrumbs.vue';
 
 import Tr from '@/i18n/translation'
 
@@ -8,7 +9,8 @@ import { useI18n } from 'vue-i18n'
 
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    Breadcrumbs
   },
   setup() {
   
@@ -48,6 +50,7 @@ export default {
       {{ $t("nav.keynotes") }}
     </template>
   </TheHeader>
+  <Breadcrumbs />
 
   <section>
     <div class="container">

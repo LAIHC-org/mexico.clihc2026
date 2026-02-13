@@ -82,15 +82,6 @@ const router = createRouter({
         },
         */
         {
-          path: 'call-for-short-papers',
-          name: 'call-for-short-papers',
-          component: () => import('../views/ComingSoonView.vue'),
-          meta: {
-            title: "CLIHC 2026 - Call for short papers (Mexico)",
-            pageTitleKey: "nav.calls_short_papers",
-          },
-        },
-        {
           path: 'call-for-hackathon',
           name: 'call-for-hackathon',
           component: () => import('../views/ComingSoonView.vue'),

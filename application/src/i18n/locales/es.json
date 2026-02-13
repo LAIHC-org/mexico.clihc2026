@@ -14,6 +14,7 @@
         "microsite": "CLIHC 2026",
         "calls": "Convocatorias",
         "calls_general": "Convocatorias generales (CLIHC 2026)",
+        "calls_general_message": "Convocatoria general y fechas oficiales (sitio central)",
         "calls_short_papers": "Convocatoria de Short Papers (México)",
         "calls_hackathon": "Convocatoria de Hackathon",
         "for_participants": "Para participantes",
@@ -23,6 +24,7 @@
         "organizers_general": "Organización general",
         "organizers_local": "Organización local",
         "central_site": "Sitio central",
+        "site_home": "México",
         "cfp": "Convocatoria de artículos cortos",
         "cfp_message": "Fecha límite (resúmenes): 23 de febrero de 2026",
         "cpt": "Convocatoria de pósteres (México)",
@@ -54,6 +56,7 @@
         "accepted_papers": "Artículos aceptados",
         "accepted_papers_message": "",        
         "pending": "Pendiente",
+        "not_found": "Página no encontrada",
         "copyright": "© 2026 Conferencia Latinoamericana de Interacción Humano-Computadora, una conferencia de LAIHC.",
         "back_to_top": "Volver arriba" 
     },

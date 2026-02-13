@@ -82,8 +82,6 @@
 											<a
 												class="dropdown-item border-radius-md"
 												:href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`"
-												target="_blank"
-												rel="noopener noreferrer"
 											>
 												<div class="d-flex">
 													<div>
@@ -91,23 +89,12 @@
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
 															{{ $t("nav.calls_general") }}
 														</span>
-													</div>
-												</div>
-											</a>
-										</li>
-										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-short-papers' })" 
-												class="dropdown-item border-radius-md"
-											>
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-															{{ $t("nav.calls_short_papers") }}
+														<span class="text-sm text-dark">
+															{{ $t("nav.calls_general_message") }}
 														</span>
 													</div>
 												</div>
-											</RouterLink>											
+											</a>
 										</li>
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-hackathon' })" 
@@ -118,6 +105,9 @@
 														<span
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
 															{{ $t("nav.calls_hackathon") }}
+														</span>
+														<span class="text-sm text-dark">
+															{{ $t("about.upcoming") }}
 														</span>
 													</div>
 												</div>
@@ -255,8 +245,6 @@
 											<a
 												class="dropdown-item border-radius-md"
 												:href="`https://clihc2026.laihc.org/${Tr.currentLocale}/organizers`"
-												target="_blank"
-												rel="noopener noreferrer"
 											>
 												<div class="d-flex">
 													<div>
@@ -288,8 +276,6 @@
 									<a
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										:href="`https://clihc2026.laihc.org/${Tr.currentLocale}`"
-										target="_blank"
-										rel="noopener noreferrer"
 									>
 										{{ $t("nav.central_site") }}
 									</a>

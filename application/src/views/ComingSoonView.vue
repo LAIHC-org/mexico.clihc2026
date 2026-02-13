@@ -2,10 +2,12 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import TheHeader from '@/components/Header.vue'
+import Breadcrumbs from '@/components/Breadcrumbs.vue'
 
 export default {
   components: {
-    TheHeader
+    TheHeader,
+    Breadcrumbs
   },
   setup() {
     const route = useRoute()
@@ -24,6 +26,7 @@ export default {
       {{ $t(pageTitleKey) }}
     </template>
   </TheHeader>
+  <Breadcrumbs />
 
   <section>
     <div class="container">

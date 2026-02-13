@@ -1,5 +1,6 @@
 <script setup>
     import TheHeader from '@/components/Header.vue';
+    import Breadcrumbs from '@/components/Breadcrumbs.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@
             {{ $t("organizers.title") }}
         </template>
     </TheHeader>
+    <Breadcrumbs />
 
     <section>
         <div class="container">

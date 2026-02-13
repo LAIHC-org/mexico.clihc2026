@@ -27,16 +27,6 @@
         <li class="list-group-item d-flex justify-content-between align-items-start">
         <div class="ms-2 me-auto">
             <div class="fw-bold">
-                <RouterLink :to="Tr.i18nRoute({ name: 'call-for-short-papers'})" class="uline">
-                    {{ $t("nav.calls_short_papers") }}
-                </RouterLink>
-            </div>
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> Proximamente<br>
-        </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <div class="fw-bold">
                 <RouterLink :to="Tr.i18nRoute({ name: 'call-for-hackathon' })" class="uline">
                     {{ $t("nav.calls_hackathon") }}
                 </RouterLink>

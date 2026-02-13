@@ -14,6 +14,7 @@
         "microsite": "CLIHC 2026",
         "calls": "Calls",
         "calls_general": "General calls (CLIHC 2026)",
+        "calls_general_message": "General call and official deadlines (main site)",
         "calls_short_papers": "Call for Short Papers (Mexico)",
         "calls_hackathon": "Call for Hackathon",
         "for_participants": "For participants",
@@ -23,6 +24,7 @@
         "organizers_general": "General organization",
         "organizers_local": "Local organization",
         "central_site": "Central site",
+        "site_home": "Mexico",
         "cfp": "Call for short papers",
         "cfp_message": "Abstract deadline: February 23, 2026",
         "cpt": "Call for poster track (México)",
@@ -54,6 +56,7 @@
         "accepted_papers": "Accepted papers",
         "accepted_papers_message": "",
         "pending": "Pending",
+        "not_found": "Page not found",
         "copyright": "© 2026 Latin American Conference on Human Computer Interaction, a LAIHC conference.",
         "back_to_top": "Back to top of page"
     },

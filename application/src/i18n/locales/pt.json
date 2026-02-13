@@ -14,6 +14,7 @@
         "microsite": "CLIHC 2026",
         "calls": "Chamadas",
         "calls_general": "Chamadas gerais (CLIHC 2026)",
+        "calls_general_message": "Chamada geral e prazos oficiais (site central)",
         "calls_short_papers": "Chamada de Short Papers (México)",
         "calls_hackathon": "Chamada de Hackathon",
         "for_participants": "Para participantes",
@@ -23,6 +24,7 @@
         "organizers_general": "Organização geral",
         "organizers_local": "Organização local",
         "central_site": "Site central",
+        "site_home": "México",
         "cfp": "Chamada de artigos curtos",
         "cfp_message": "Prazo (resumos): 23 de fevereiro de 2026",
         "cpt": "Chamada para pôsteres (México)",
@@ -54,6 +56,7 @@
         "accepted_papers": "Artigos aceitos",
         "accepted_papers_message": "",        
         "pending": "Pendente",
+        "not_found": "Página não encontrada",
         "copyright": "© 2026 Conferência Latino-Americana de Interação Humano-Computador, uma conferência da LAIHC.",
         "back_to_top": "Voltar ao topo da página"
     },
