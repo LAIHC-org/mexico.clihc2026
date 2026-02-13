@@ -17,6 +17,7 @@ export default {
 
 <script setup>
 import TheHeader from '@/components/Header.vue'
+import Breadcrumbs from '@/components/Breadcrumbs.vue'
 </script>
 
 <template>
@@ -25,6 +26,7 @@ import TheHeader from '@/components/Header.vue'
             {{ $t("accepted_papers.title") }}
         </template>
     </TheHeader>
+    <Breadcrumbs />
 
     <section class="">
         <div class="container">

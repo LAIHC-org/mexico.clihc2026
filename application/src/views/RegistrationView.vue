@@ -1,5 +1,6 @@
 <script>
 import TheHeader from '@/components/Header.vue';
+import Breadcrumbs from '@/components/Breadcrumbs.vue';
 
 import Tr from '@/i18n/translation'
 
@@ -9,6 +10,7 @@ import { useI18n } from 'vue-i18n'
 export default {
   components: {
     TheHeader,
+    Breadcrumbs,
   },
   setup() {
     const { locale } = useI18n()
@@ -43,10 +45,11 @@ export default {
 
 <template>
   <TheHeader>
-    <template #page-name>      
+    <template #page-name>
       {{ $t("nav.rates_and_registration_title") }}
     </template>
   </TheHeader>
+  <Breadcrumbs />
 
   <section>
     <div class="container">
