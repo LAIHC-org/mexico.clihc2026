@@ -1,142 +1,164 @@
-<script>
-	import Tr from '@/i18n/translation'
-
-	export default {
-		setup() {
-			return { Tr }
-		}
-	}
-</script>
-
 <template>
-	<!--
-    <h2 class="">Para asistir a toda la conferencia</h2>
+	<p class="lead">
+		Promoviendo la igualdad de género y la inclusión en el diseño y la tecnología, CLIHC 2026 se realiza de forma distribuida entre dos sedes, en Aracaju (Brasil) y en Oaxaca (México). A continuación, se presenta la información necesaria para realizar su inscripción en la sede Oaxaca y participar en esta experiencia académica internacional.
+	</p>
 
-	<table class="table table-striped">
-		<caption>Tabla de costos para asistir a toda la conferencia</caption>
-		<thead>
-			<tr>
-				<th scope="col">Descripción</th>
-				<th scope="col">MX</th>
-				<th scope="col">USD</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Presencial para profesionales</td>
-				<td>$2500</td>
-				<td>$145</td>
-			</tr>
-			<tr>
-				<td>Presencial para estudiantes autores</td>
-				<td>$1400</td>
-				<td>$87</td>
-			</tr>
-			<tr>
-				<td>Presencial para estudiantes no autores</td>
-				<td>$500</td>
-				<td>$30</td>
-			</tr>
-			<tr>
-				<td>Virtual para profesionales</td>
-				<td>$880</td>
-				<td>$55</td>
-			</tr>
-			<tr>
-				<td>Virtual para estudiantes</td>
-				<td>$270</td>
-				<td>$15</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td span="3"><strong>Nota:</strong> Cena de Gala y comidas no están incluidas en el registro</td>
-			</tr>
-		</tfoot>
-	</table>
+	<ul>
+		<li>Las inscripciones al CLIHC 2026 en la sede Oaxaca se realizarán exclusivamente a través de los mecanismos indicados en esta sección, siendo este el único medio oficial de registro.</li>
+		<li>Los valores de inscripción para la sede Oaxaca están establecidos en pesos mexicanos (MXN).</li>
+		<li>Los participantes nacionales e internacionales deberán seguir las indicaciones aquí descritas para completar su proceso de inscripción.</li>
+	</ul>
 
-	<h2 class="">Para asistir a Tutoriales/Talleres (límite de cupos)</h2>
+	<h2>Relación con la Sociedad Brasileña de Computación (SBC)</h2>
+	<p>
+		CLIHC 2026 es un evento apoyado por la Sociedad Brasileña de Computación (SBC), por lo que se contemplan tarifas diferenciadas para miembros y no miembros de esta organización.
+	</p>
+	<p>
+		Únicamente podrán seleccionar la tarifa de miembro SBC quienes sean miembros activos de la SBC durante 2026 y puedan comprobar su afiliación vigente.
+	</p>
+	<p>
+		Las personas que seleccionen la tarifa SBC deberán enviar su comprobante de membresía vigente 2026 al correo:
+		<a href="mailto:registro.clihc2026@gmail.com">registro.clihc2026@gmail.com</a>.
+	</p>
+	<div class="alert alert-warning registration-alert" role="alert">
+		<strong>Importante:</strong> Es responsabilidad del participante verificar su estatus de membresía antes de seleccionar esta categoría. En caso de no comprobar la membresía, se deberá cubrir la diferencia correspondiente a la tarifa sin membresía SBC. Esta diferenciación aplica para ambas sedes del congreso, incluida la sede Oaxaca, independientemente del lugar de inscripción.
+	</div>
 
-	<table class="table table-striped">
-		<caption>Tabla de costos para asistir a Tutoriales/Talleres (límite de cupos)</caption>
-		<thead>
-			<tr>
-				<th scope="col">Descripción</th>
-				<th scope="col">MX</th>
-				<th scope="col">USD</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Presencial para profesionales</td>
-				<td>$690 </td>
-				<td>$40</td>
-			</tr>
-			<tr>
-				<td>Presencial para estudiantes</td>
-				<td>$270</td>
-				<td>$15</td>
-			</tr>
-			<tr>
-				<td>Virtual para profesionales</td>
-				<td>$345</td>
-				<td>$20</td>
-			</tr>
-			<tr>
-				<td>Virtual para estudiantes</td>
-				<td>$85</td>
-				<td>$5</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td span="3"><strong>Nota:</strong> El registro a la conferencia es pre-requisito para el registro a Tutoriales y Talleres</td>
-			</tr>
-		</tfoot>
-	</table>
+	<h2>Tarifas de inscripción (Sede Oaxaca)</h2>
+	<div class="table-responsive">
+		<table class="table table-striped align-middle">
+			<caption>Tarifas de inscripción para asistentes y autores de la sede Oaxaca</caption>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">Categoría</th>
+					<th scope="col" colspan="2">Asistente</th>
+					<th scope="col" colspan="2">Autores</th>
+				</tr>
+				<tr>
+					<th scope="col">Miembro SBC</th>
+					<th scope="col">No miembro SBC</th>
+					<th scope="col">Miembro SBC</th>
+					<th scope="col">No miembro SBC</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Estudiante universitario (UGS)</th>
+					<td>$391 MXN</td>
+					<td>$476 MXN</td>
+					<td>$697 MXN</td>
+					<td>$782 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Estudiante de posgrado (GS)</th>
+					<td>$544 MXN</td>
+					<td>$646 MXN</td>
+					<td>$850 MXN</td>
+					<td>$952 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Profesor (ST)</th>
+					<td>$612 MXN</td>
+					<td>$731 MXN</td>
+					<td>$918 MXN</td>
+					<td>$1,037 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Profesionales (academia o industria)</th>
+					<td>$1,020 MXN</td>
+					<td>$1,207 MXN</td>
+					<td>$1,620 MXN</td>
+					<td>$1,800 MXN</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p>La tarifa incluye acceso a conferencias magistrales, conferencias técnicas, Student Design Competition (SDC), sesiones de pósters y talleres como asistente general.</p>
+	<p><strong>Nota:</strong> No incluye Cena de Gala.</p>
 
-	<h2 class="">Sobre registro de autores</h2>
+	<h2>Tutoriales</h2>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<caption>Costos de tutoriales de la sede Oaxaca</caption>
+			<thead>
+				<tr>
+					<th scope="col">Descripción</th>
+					<th scope="col">Costo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Taller 1 (Completo)</th>
+					<td>$250 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Taller 2 (Medio día)</th>
+					<td>$150 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Taller 3 (Medio día)</th>
+					<td>$150 MXN</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p>Incluye acceso al taller correspondiente y acceso a conferencias generales.</p>
+	<p><strong>Notas:</strong> Cupo limitado. No incluye Cena de Gala.</p>
 
-	<ol>
-		<li>
-			Para publicaciones con al menos un autor profesional
-			<ol type="a">
-				<li>Cada artículo a presentar debe tener al menos un autor profesional registrado ya en modalidad presencial o virtual</li>
-				<li>Si varios artículos están asociados con el mismo autor profesional, entonces por cada publicación adicional, el autor registrado debe pagar (cancelar) el valor de la publicación (880 pesos) o, en su defecto, otro autor profesional debe registrarse al menos en modalidad virtual</li>
-			</ol>
-		</li>
-		<li>
-			Para publicaciones donde todos los autores son estudiantes
-			<ol type="a">
-				<li>Cada artículo a presentar debe tener al menos un autor registrado ya sea en modalidad presencial o virtual</li>
-			</ol>
-		</li>
-		<li>
-			Sobre descuentos
-			<ol type="a">
-				<li>Registrados entre el 15 de septiembre y 15 de octubre podrán registrarse en tutoriales y talleres sin cobro adicional</li>
-				<li>50% de descuento para el registro presencial de profesores que registren a 5 estudiantes en modalidad presencial</li>
-				<li>100% de descuento al registro presencial de profesores que registren a 10 estudiantes en esta modalidad</li>
-				<li>50% de descuento al registro presencial de profesores que registren a 10 estudiantes en modalidad virtual</li>
-				<li>100% sí registran a 20 estudiantes en modalidad virtual</li>
-			</ol>
-		</li>
-	</ol>
+	<h2>Cena de Gala</h2>
+	<p>
+		El costo de la Cena de Gala es de <strong>$400 MXN</strong>, el cual deberá agregarse al monto total de su inscripción, según la categoría de participación correspondiente.
+	</p>
 
-    <section class="py-5 container" id="download-soft-ui">
-        <div class="bg-gradient-dark position-relative border-radius-xl overflow-hidden">
-            <img src="/assets/img/shapes/waves-white.svg" alt="" class="position-absolute start-0 top-md-0 w-100 opacity-6">
-            <div class="container py-7 postion-relative z-index-2 position-relative">
-                <div class="row">
-                    <div class="col-md-7 mx-auto text-center">                        
-                        <a href="https://true-werewolf-eternal.ngrok-free.app/" class="btn btn-lg  bg-gradient-yellow  btn-round">
-							{{ $t("register.register_button") }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	-->
-	<p class="mt-5 text-center">La información sobre tarifas y registro estará disponible pronto.</p>
+	<h2>Información bancaria y proceso de pago</h2>
+	<h3>1. Definir el concepto de pago</h3>
+	<p>Antes de realizar el pago, deberá identificar el concepto correcto, el cual permitirá validar su registro. El concepto debe escribirse exactamente como se indica.</p>
+	<ul>
+		<li><strong>Autores:</strong> #ID del trabajo CLIHC2026. Ejemplo: 123 CLIHC2026</li>
+		<li><strong>Asistentes:</strong> ASISTENTE CLIHC2026</li>
+		<li><strong>Tutoriales:</strong> TUTORIALES CLIHC2026</li>
+	</ul>
+
+	<h3>2. Realizar el pago</h3>
+	<p>Efectúe el pago mediante transferencia o depósito con los siguientes datos:</p>
+	<ul>
+		<li><strong>Nombre:</strong> Universidad Tecnológica de la Mixteca</li>
+		<li><strong>Banco:</strong> HSBC México, S.A.</li>
+		<li><strong>CLABE:</strong> 021614040005404191</li>
+		<li><strong>Cuenta:</strong> 4000540419</li>
+		<li><strong>Concepto:</strong> según el tipo de participación</li>
+	</ul>
+	<p><strong>Fecha límite:</strong> 22 de abril.</p>
+
+	<h3>3. Enviar comprobante</h3>
+	<p>
+		Enviar comprobante a <a href="mailto:registro.clihc2026@gmail.com">registro.clihc2026@gmail.com</a>. Este paso es obligatorio para validar la inscripción.
+	</p>
+
+	<h3>4. Facturación opcional</h3>
+	<p>
+		Si requiere factura fiscal, deberá solicitarla enviando un correo a <a href="mailto:registration.clihc2026@gmail.com">registration.clihc2026@gmail.com</a>.
+	</p>
+	<p>Adjunte comprobante de pago, Constancia de Situación Fiscal y uso del CFDI. La factura solo podrá emitirse si se proporciona la información fiscal completa.</p>
+
+	<h3>5. Pagos internacionales</h3>
+	<p>Para pagos realizados desde fuera de México, deberá proporcionar los siguientes datos a la institución emisora:</p>
+	<ul>
+		<li><strong>Nombre:</strong> HSBC México, S.A. Institución de Banca Múltiple, Grupo Financiero</li>
+		<li><strong>Dirección:</strong> Paseo de la Reforma 347, Ciudad de México</li>
+		<li><strong>Código SWIFT:</strong> BIMEMXMMXXX</li>
+		<li><strong>Cuenta destino / CLABE:</strong> 021614040005404191</li>
+	</ul>
+	<div class="alert alert-warning registration-alert" role="alert">
+		<strong>Importante:</strong> La transferencia internacional debe realizarse desde una institución bancaria que permita envíos vía SWIFT. Una vez realizada la transferencia, deberá enviarse el comprobante al correo de registro.
+	</div>
 </template>
+
+<style scoped>
+.registration-alert {
+	top: 0;
+	z-index: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+</style>

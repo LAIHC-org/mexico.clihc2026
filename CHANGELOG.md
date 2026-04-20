@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0.3.m] - 2026-04-20
+
+### Added
+
+- Added the localized registration page for the Mexico venue in ES/EN/PT, including SBC membership validation, fees, tutorials, Gala Dinner, payment instructions, invoicing, and international payment information.
+
+### Changed
+
+- Updated participant navigation labels to point to the registration content in the main menu and footer.
+
 ## [2026.1.0.2.m] - 2026-02-13
 
 ### Added
