@@ -138,5 +138,166 @@
         </div>
     </section>
 	-->
-	<p class="mt-5 text-center">As informações sobre tarifas e registro estarão disponíveis em breve.</p>
+	<p class="lead">
+		Promovendo a igualdade de gênero e a inclusão no design e na tecnologia, a CLIHC 2026 será realizada em formato distribuído entre duas sedes, em Aracaju (Brasil) e Oaxaca (México). A seguir, são apresentadas as informações necessárias para realizar sua inscrição na sede Oaxaca e participar desta experiência acadêmica internacional.
+	</p>
+
+	<ul>
+		<li>As inscrições para a CLIHC 2026 na sede Oaxaca serão realizadas exclusivamente pelos mecanismos indicados nesta seção, sendo este o único meio oficial de inscrição.</li>
+		<li>Os valores de inscrição para a sede Oaxaca estão estabelecidos em pesos mexicanos (MXN).</li>
+		<li>Participantes nacionais e internacionais deverão seguir as instruções aqui descritas para concluir seu processo de inscrição.</li>
+	</ul>
+
+	<h2>Relação com a Sociedade Brasileira de Computação (SBC)</h2>
+	<p>
+		A CLIHC 2026 é um evento apoiado pela Sociedade Brasileira de Computação (SBC), por isso há tarifas diferenciadas para membros e não membros dessa organização.
+	</p>
+	<p>
+		Somente poderão selecionar a tarifa de membro SBC as pessoas que forem membros ativos da SBC durante 2026 e puderem comprovar sua afiliação vigente.
+	</p>
+	<p>
+		As pessoas que selecionarem a tarifa SBC deverão enviar o comprovante de membresia vigente em 2026 para:
+		<a href="mailto:registro.clihc2026@gmail.com">registro.clihc2026@gmail.com</a>.
+	</p>
+	<div class="alert alert-warning registration-alert" role="alert">
+		<strong>Importante:</strong> É responsabilidade da pessoa participante verificar seu status de membresia antes de selecionar esta categoria. Caso a membresia não seja comprovada, deverá ser paga a diferença correspondente à tarifa sem membresia SBC. Essa diferenciação se aplica às duas sedes do congresso, incluindo a sede Oaxaca, independentemente do local de inscrição.
+	</div>
+
+	<h2>Tarifas de inscrição (Sede Oaxaca)</h2>
+	<div class="table-responsive">
+		<table class="table table-striped align-middle">
+			<caption>Tarifas de inscrição para participantes e autores da sede Oaxaca</caption>
+			<thead>
+				<tr>
+					<th scope="col" rowspan="2">Categoria</th>
+					<th scope="col" colspan="2">Participante</th>
+					<th scope="col" colspan="2">Autores</th>
+				</tr>
+				<tr>
+					<th scope="col">Membro SBC</th>
+					<th scope="col">Não membro SBC</th>
+					<th scope="col">Membro SBC</th>
+					<th scope="col">Não membro SBC</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Estudante universitário (UGS)</th>
+					<td>$391 MXN</td>
+					<td>$476 MXN</td>
+					<td>$697 MXN</td>
+					<td>$782 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Estudante de pós-graduação (GS)</th>
+					<td>$544 MXN</td>
+					<td>$646 MXN</td>
+					<td>$850 MXN</td>
+					<td>$952 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Professor (ST)</th>
+					<td>$612 MXN</td>
+					<td>$731 MXN</td>
+					<td>$918 MXN</td>
+					<td>$1,037 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Profissionais (academia ou indústria)</th>
+					<td>$1,020 MXN</td>
+					<td>$1,207 MXN</td>
+					<td>$1,620 MXN</td>
+					<td>$1,800 MXN</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p>A tarifa inclui acesso a palestras principais, conferências técnicas, Student Design Competition (SDC), sessões de pôsteres e workshops como participante geral.</p>
+	<p><strong>Nota:</strong> Não inclui o Jantar de Gala.</p>
+
+	<h2>Tutoriais</h2>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<caption>Custos dos tutoriais da sede Oaxaca</caption>
+			<thead>
+				<tr>
+					<th scope="col">Descrição</th>
+					<th scope="col">Custo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Workshop 1 (Completo)</th>
+					<td>$250 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Workshop 2 (Meio dia)</th>
+					<td>$150 MXN</td>
+				</tr>
+				<tr>
+					<th scope="row">Workshop 3 (Meio dia)</th>
+					<td>$150 MXN</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p>Inclui acesso ao workshop correspondente e acesso às conferências gerais.</p>
+	<p><strong>Notas:</strong> Vagas limitadas. Não inclui o Jantar de Gala.</p>
+
+	<h2>Jantar de Gala</h2>
+	<p>
+		O custo do Jantar de Gala é de <strong>$400 MXN</strong>, que deverá ser adicionado ao valor total da inscrição, conforme a categoria de participação correspondente.
+	</p>
+
+	<h2>Informações bancárias e processo de pagamento</h2>
+	<h3>1. Definir o conceito de pagamento</h3>
+	<p>Antes de realizar o pagamento, identifique o conceito correto, que permitirá validar sua inscrição. O conceito deve ser escrito exatamente como indicado.</p>
+	<ul>
+		<li><strong>Autores:</strong> #ID do trabalho CLIHC2026. Exemplo: 123 CLIHC2026</li>
+		<li><strong>Participantes:</strong> ASISTENTE CLIHC2026</li>
+		<li><strong>Tutoriais:</strong> TUTORIALES CLIHC2026</li>
+	</ul>
+
+	<h3>2. Realizar o pagamento</h3>
+	<p>Realize o pagamento por transferência ou depósito usando os seguintes dados:</p>
+	<ul>
+		<li><strong>Nome:</strong> Universidad Tecnológica de la Mixteca</li>
+		<li><strong>Banco:</strong> HSBC México, S.A.</li>
+		<li><strong>CLABE:</strong> 021614040005404191</li>
+		<li><strong>Conta:</strong> 4000540419</li>
+		<li><strong>Conceito:</strong> de acordo com o tipo de participação</li>
+	</ul>
+	<p><strong>Data limite:</strong> 22 de abril.</p>
+
+	<h3>3. Enviar comprovante</h3>
+	<p>
+		Envie o comprovante para <a href="mailto:registro.clihc2026@gmail.com">registro.clihc2026@gmail.com</a>. Este passo é obrigatório para validar a inscrição.
+	</p>
+
+	<h3>4. Faturamento opcional</h3>
+	<p>
+		Se precisar de nota fiscal, solicite-a enviando um e-mail para <a href="mailto:registration.clihc2026@gmail.com">registration.clihc2026@gmail.com</a>.
+	</p>
+	<p>Anexe o comprovante de pagamento, a Constancia de Situación Fiscal e o uso do CFDI. A nota fiscal só poderá ser emitida se as informações fiscais completas forem fornecidas.</p>
+
+	<h3>5. Pagamentos internacionais</h3>
+	<p>Para pagamentos realizados de fora do México, forneça os seguintes dados à instituição emissora:</p>
+	<ul>
+		<li><strong>Nome:</strong> HSBC México, S.A. Institución de Banca Múltiple, Grupo Financiero</li>
+		<li><strong>Endereço:</strong> Paseo de la Reforma 347, Cidade do México</li>
+		<li><strong>Código SWIFT:</strong> BIMEMXMMXXX</li>
+		<li><strong>Conta destino / CLABE:</strong> 021614040005404191</li>
+	</ul>
+	<div class="alert alert-warning registration-alert" role="alert">
+		<strong>Importante:</strong> A transferência internacional deve ser realizada a partir de uma instituição bancária que permita envios via SWIFT. Após a realização da transferência, o comprovante deverá ser enviado ao e-mail de inscrição.
+	</div>
 </template>
+
+<style scoped>
+.registration-alert {
+	top: 0;
+	z-index: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+</style>
