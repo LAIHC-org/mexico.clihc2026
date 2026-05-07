@@ -1,0 +1,1 @@
+import{O as e}from"./OrganizerItem-D_KUPPaG.js";import{_ as o,c as r,o as t,T as s}from"./index-DuQ9Aphr.js";const n={components:{OrganizerItem:e},setup(){return{Tr:s}}},a={class:"mt-6 text-center"};function c(p,l,_,m,f,i){return t(),r("p",a,"The Call for Short Papers will be announced soon.")}const h=o(n,[["render",c]]);export{h as default};
