@@ -1,44 +1,18 @@
 <script>
 import TheHeader from '@/components/Header.vue';
 import Breadcrumbs from '@/components/Breadcrumbs.vue';
+import ScheduleContent from '@/components/ScheduleContent.vue';
 
 import Tr from '@/i18n/translation'
-
-import { shallowRef, watch, defineAsyncComponent } from 'vue'
-import { useI18n } from 'vue-i18n'
 
 export default {
     components: {
         TheHeader,
         Breadcrumbs,
+        ScheduleContent,
     },
     setup() {
-        const { locale } = useI18n()
-        const contentComponent = shallowRef(null)
-
-        const loadComponents = async (newLocale) => {
-            contentComponent.value = await getContentForLocale(newLocale)
-        }
-
-        watch(locale, loadComponents, { immediate: true })
-
-        async function getContentForLocale(locale) {
-            switch (locale) {
-                case 'en':
-                    return defineAsyncComponent(() => import('@/components/locales/en/Schedule.vue'))
-                case 'es':
-                    return defineAsyncComponent(() => import('@/components/locales/es/Schedule.vue'))
-                case 'pt':
-                    return defineAsyncComponent(() => import('@/components/locales/pt/Schedule.vue'))
-                default:
-                    return null
-            }
-        }
-
-        return {
-            contentComponent,
-            Tr
-        }
+        return { Tr }
     }
 }
 </script>
@@ -51,13 +25,11 @@ export default {
     </TheHeader>
     <Breadcrumbs />
 
-    <section class="">
+    <section>
         <div class="container">
             <div class="row justify-content-center my-3">
-                <div class="col-lg-12">
-                    <template v-if="contentComponent">
-                        <component :is="contentComponent" />
-                    </template>
+                <div class="col-lg-10">
+                    <ScheduleContent />
                 </div>
             </div>
         </div>
