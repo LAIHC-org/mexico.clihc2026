@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0.4.m] - 2026-05-06
+
+### Added
+
+- Added full event schedule page for CLIHC 2026 Mexico in ES/EN/PT, based on the official program (programa.xlsx).
+- Created `scheduleData.js` with the 3-day program structure: parallel rooms per day, SDC teams, short papers, panelists, and social events.
+- Created `ScheduleContent.vue` component with Brazil-style card-based layout, day tabs, session type icons, legend, and responsive multi-column grid.
+
+### Changed
+
+- Replaced static locale-based Schedule.vue files with a single reactive `ScheduleContent` component that handles all three locales internally.
+- Schedule view now uses `col-lg-4/col-md-6` for 3 parallel sessions and `col-lg-3/col-md-6` for 4 parallel sessions.
+- Panelist names rendered as a plain bullet list instead of pill badges for better readability with long names.
+
 ## [2026.1.0.3.m] - 2026-04-20
 
 ### Added
