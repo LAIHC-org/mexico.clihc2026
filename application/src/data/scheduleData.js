@@ -13,32 +13,39 @@ export const SessionType = {
     OTHER: 'other'
 }
 
-// SDC poster teams (shown in Day 1 afternoon & Day 2 vestíbulo)
-const sdcTeams = [
-    { title: 'CareBites: Plataforma Digital para la Reducción del Desperdicio Alimentario' },
-    { title: '¿Qué hongo?: transmisión y preservación de saberes locales sobre diversidad fúngica mediante herramientas educativas digitales' },
-    { title: 'Kói xíun: Sistema de monitoreo de personas con demencia para la reducción de sobrecarga del cuidador' },
-    { title: 'Preservación digital del patrimonio cultural comunitario mediante una plataforma interactiva' },
-    { title: 'Diseño de un Sistema Portátil IoMT para el Monitoreo Biométrico y Asistencia Geriátrica' },
-    { title: 'Diseño de una solución tecnológica para disminuir la sensación de vulnerabilidad en trayectos y espacios cotidianos' }
+const sdcPosterTeams = [
+    { title: 'CareBites: Plataforma Digital para la Reducción del Desperdicio Alimentario. Barbara Daria Rivera-Anguiano, Arianna Monserratt Hurtado-Ramos, Fernanda Nataly Iglesias-Rincón, Silvia Berenice Fajardo-Flores' },
+    { title: '¿Qué hongo?: transmisión y preservación de saberes locales sobre diversidad fúngica mediante herramientas educativas digitales. Claudia Torillo, Victor Hugo Sánchez, Luciana Bretón' },
+    { title: 'Kói xíun: Sistema de monitoreo de personas con demencia para la reducción de sobrecarga del cuidador. Thelma García Reyes, Adriana Alejandra Hernandez Ricardez, Kevin García, Kevy García, Luis Mario Espinosa Ortiz, Nicolas Soriano Martinez' },
+    { title: 'Preservación digital del patrimonio cultural comunitario mediante una plataforma interactiva. Jose Armando Garcia Bandera, Keila Reyes Martínez, Aldo Gabriel De la Rosa Jiménez, Iris Labastida Martínez' },
+    { title: 'Diseño de un Sistema Portátil IoMT para el Monitoreo Biométrico y Asistencia Geriátrica. Danna Colin, Ariadna Espina Ramirez, Ricardo Lopez Jimenez, Tlacaelel Salazar Martinez, David Del Castillo Lale' },
+    { title: 'Diseño de una solución tecnológica para disminuir la sensación de vulnerabilidad en trayectos y espacios cotidianos. Valeria Rodrígez, Patricia Cruz, Itzel Lorena Medrano Perez, Mauricio Osorio, Moises Ramirez, Yoosavi Yoosavi Sánchez' }
 ]
 
-const shortPapers = [
-    { title: 'Designing Nonverbal Responses to Healthcare Robot Navigation Errors Through Performer-Based Enactments' },
-    { title: 'Designing an AI-Assisted Speech-Based Interactive System for Home-Based Sentence Practice for Children' },
-    { title: 'Brechas comunicacionales y satisfacción estudiantil: requerimientos para una plataforma académica centrada en el usuario' },
-    { title: 'Diseño de interacción activa en aplicaciones de estimulación lingüística para niños de educación primaria a partir de evidencia contextual en HCI' },
-    { title: 'Hacia la Evolución de la GUI Desktop: IA Centrada en el Humano como Paradigma para Repensar la Interacción con Sistemas Operativos' },
-    { title: 'Use of Augmented Reality in a Pop-Up Book to Promote the Artistic Work of Rufino Tamayo' },
-    { title: 'Propuestas de entornos inmersivos para el estudio autónomo universitario a través de un proceso de diseño centrado en el usuario' }
+const shortPapersAndColloquium = [
+    { title: 'Designing Nonverbal Responses to Healthcare Robot Navigation Errors Through Performer-Based Enactments. Hideki Garcia Goo (University of Twente), Vanessa Evers' },
+    { title: 'Designing an AI-Assisted Speech-Based Interactive System for Home-Based Sentence Practice for Children. Elizabeth Wiafe (Dalhousie University), Frank Rudzicz (Dalhousie University), Lizbeth Escobedo (Dalhousie University, Faculty of Computer Science)' },
+    { title: 'Brechas comunicacionales y satisfacción estudiantil: requerimientos para una plataforma académica centrada en el usuario. Karla Stephania Sanchez Silva (Universidad Tecnológica de la Mixteca), Mario Alberto Moreno Rocha (Universidad Tecnológica de la Mixteca), Conrado Aguilar Cruz' },
+    { title: 'Diseño de interacción activa en aplicaciones de estimulación lingüística para niños de educación primaria a partir de evidencia contextual en HCI. Adriana Alejandra Hernandez Ricardez (Universidad Tecnológica de la Mixteca)' },
+    { title: 'Hacia la Evolución de la GUI Desktop: IA Centrada en el Humano como Paradigma para Repensar la Interacción con Sistemas Operativos. Jose Ramon Aragon Toledo (Universidad Tecnológica de la Mixteca), Ricardo Ruíz Rodríguez' },
+    { title: 'Use of Augmented Reality in a Pop-Up Book to Promote the Artistic Work of Rufino Tamayo. Edna Patricia Quezada (Instituto Politecnico Nacional)' },
+    { title: 'Propuestas de entornos inmersivos para el estudio autónomo universitario a través de un proceso de diseño centrado en el usuario. Luis Mario Espinosa Ortiz (Universidad Tecnológica de la Mixteca), Mario Alberto Moreno Rocha (Universidad Tecnologica de la Mixteca)' },
+    { title: 'Consorcio de Posgrado: Structured Human-AI Collaboration as an Implementation Methodology for Learning Analytics in a Latin American Public University Context. Miguel Ángel Rodríguez-Ortiz, Luis E. Anido-Rifón, Pedro C. Santana-Mancilla' }
 ]
 
 export const scheduleData = {
-    edition: 'CLIHC 2026 - México',
-    venue: 'Colima, México',
+    edition: {
+        en: 'CLIHC 2026 - Mexico',
+        pt: 'CLIHC 2026 - México',
+        es: 'CLIHC 2026 - México'
+    },
+    venue: {
+        en: 'Oaxaca, Mexico',
+        pt: 'Oaxaca, México',
+        es: 'Oaxaca, México'
+    },
     timezone: 'CST (UTC-6)',
     days: [
-        // ─── DÍA 1: miércoles 27 de mayo ───────────────────────────────────────────
         {
             id: 'day1',
             date: '2026-05-27',
@@ -50,7 +57,7 @@ export const scheduleData = {
             theme: null,
             venue: {
                 en: 'Centro Gastronómico',
-                pt: 'Centro Gastronómico',
+                pt: 'Centro Gastronômico',
                 es: 'Centro Gastronómico'
             },
             timeSlots: [
@@ -59,12 +66,12 @@ export const scheduleData = {
                     sessions: [
                         {
                             location: { en: 'Salón 1', pt: 'Salão 1', es: 'Salón 1' },
-                            type: SessionType.OTHER,
+                            type: SessionType.REGISTRATION,
                             tag: { en: 'Opening', pt: 'Abertura', es: 'Inauguración' },
                             title: {
-                                en: 'Opening Ceremony & Welcome Reception',
-                                pt: 'Abertura e Recepção de Boas-Vindas',
-                                es: 'Inauguración y Recepción'
+                                en: 'Opening and Registration',
+                                pt: 'Abertura e credenciamento',
+                                es: 'Inauguración y registro'
                             }
                         }
                     ]
@@ -77,36 +84,42 @@ export const scheduleData = {
                             type: SessionType.TUTORIAL,
                             tag: { en: 'Tutorial 1', pt: 'Tutorial 1', es: 'Tutorial 1' },
                             title: {
-                                en: 'Tutorial: Juan Pablo Hourcade',
-                                pt: 'Tutorial: Juan Pablo Hourcade',
-                                es: 'Tutorial: Juan Pablo Hourcade'
+                                en: 'Designing for children with their development in mind',
+                                pt: 'Projetando para crianças levando em conta seu desenvolvimento',
+                                es: 'Diseñando para niños teniendo en cuenta su desarrollo'
                             },
-                            speaker: 'Juan Pablo Hourcade'
+                            speaker: 'Dr. Juan Pablo Hourcade',
+                            subtitle: {
+                                en: 'University of Iowa',
+                                pt: 'University of Iowa',
+                                es: 'University of Iowa'
+                            }
                         },
                         {
                             location: { en: 'Salón 2', pt: 'Salão 2', es: 'Salón 2' },
                             type: SessionType.TUTORIAL,
                             tag: { en: 'Tutorial 3', pt: 'Tutorial 3', es: 'Tutorial 3' },
                             title: {
-                                en: 'Tutorial: Abraham Tonix',
-                                pt: 'Tutorial: Abraham Tonix',
-                                es: 'Tutorial: Abraham Tonix'
+                                en: 'Invisible Users: hidden archetypes and design externalities in technological ecosystems',
+                                pt: 'Usuários invisíveis: arquétipos ocultos e externalidades do design em ecossistemas tecnológicos',
+                                es: 'Usuarios invisibles: arquetipos ocultos y externalidades del diseño en ecosistemas tecnológicos'
                             },
                             speaker: 'Abraham Tonix'
                         },
                         {
                             location: { en: 'Salón 3', pt: 'Salão 3', es: 'Salón 3' },
                             type: SessionType.WORKSHOP,
-                            tag: { en: 'Hackathon', pt: 'Hackathon', es: 'Hackathon' },
+                            tag: { en: 'Hackathon Workshop', pt: 'Workshop Hackathon', es: 'Taller Hackatón' },
                             title: {
                                 en: 'Hackathon Workshop',
                                 pt: 'Workshop Hackathon',
-                                es: 'Taller Hackathon'
+                                es: 'Taller Hackatón'
                             },
+                            speaker: 'Eduardo Torres Jaime',
                             subtitle: {
-                                en: '14 teams of 4 members',
-                                pt: '14 equipes de 4 integrantes',
-                                es: '14 equipos de 4 integrantes'
+                                en: 'CEO, Loop Conexión Empresarial',
+                                pt: 'CEO, Loop Conexión Empresarial',
+                                es: 'CEO, Loop Conexión Empresarial'
                             }
                         }
                     ]
@@ -129,20 +142,25 @@ export const scheduleData = {
                             type: SessionType.TUTORIAL,
                             tag: { en: 'Tutorial 2', pt: 'Tutorial 2', es: 'Tutorial 2' },
                             title: {
-                                en: 'Tutorial: Hendrix',
-                                pt: 'Tutorial: Hendrix',
-                                es: 'Tutorial: Hendrix'
+                                en: 'Software development with artificial intelligence tools',
+                                pt: 'Desenvolvimento de software com ferramentas de inteligência artificial',
+                                es: 'Desarrollo de software con herramientas de inteligencia artificial'
                             },
-                            speaker: 'Hendrix'
+                            speaker: 'Hendrik Martina',
+                            subtitle: {
+                                en: 'Artesanos Digitales',
+                                pt: 'Artesanos Digitales',
+                                es: 'Artesanos Digitales'
+                            }
                         },
                         {
                             location: { en: 'Salón 2', pt: 'Salão 2', es: 'Salón 2' },
                             type: SessionType.TUTORIAL,
                             tag: { en: 'Tutorial 3', pt: 'Tutorial 3', es: 'Tutorial 3' },
                             title: {
-                                en: 'Tutorial: Abraham Tonix',
-                                pt: 'Tutorial: Abraham Tonix',
-                                es: 'Tutorial: Abraham Tonix'
+                                en: 'Invisible Users: hidden archetypes and design externalities in technological ecosystems',
+                                pt: 'Usuários invisíveis: arquétipos ocultos e externalidades do design em ecossistemas tecnológicos',
+                                es: 'Usuarios invisibles: arquetipos ocultos y externalidades del diseño en ecosistemas tecnológicos'
                             },
                             speaker: 'Abraham Tonix',
                             continuation: true
@@ -150,20 +168,18 @@ export const scheduleData = {
                         {
                             location: { en: 'Salón 3', pt: 'Salão 3', es: 'Salón 3' },
                             type: SessionType.COMPETITION,
-                            tag: { en: 'SDC – Posters', pt: 'CDE – Pôsteres', es: 'SDC – Pósters' },
+                            tag: { en: 'SDC Posters', pt: 'Pôsteres CDE', es: 'Pósters SDC' },
                             title: {
-                                en: 'Student Design Competition – Poster Session',
-                                pt: 'Competição de Design Estudantil – Sessão de Pôsteres',
-                                es: 'Competencia de Diseño Estudiantil – Sesión de Pósters'
+                                en: 'Student Design Competition Poster Session',
+                                pt: 'Sessão de pôsteres da Competição de Design Estudantil',
+                                es: 'Sesión de pósters de la Competencia de Diseño Estudiantil'
                             },
-                            papers: sdcTeams
+                            papers: sdcPosterTeams
                         }
                     ]
                 }
             ]
         },
-
-        // ─── DÍA 2: jueves 28 de mayo ──────────────────────────────────────────────
         {
             id: 'day2',
             date: '2026-05-28',
@@ -178,9 +194,9 @@ export const scheduleData = {
                 es: 'Temática: Igualdad de Género'
             },
             venue: {
-                en: 'Convention Center – Multipurpose Hall',
-                pt: 'Centro de Convenções – Salão Multifuncional',
-                es: 'Centro de Convenciones – Salón Multifuncional'
+                en: 'Convention Center - Multipurpose Hall',
+                pt: 'Centro de Convenções - Salão Multifuncional',
+                es: 'Centro de Convenciones - Salón Multifuncional'
             },
             timeSlots: [
                 {
@@ -192,7 +208,7 @@ export const scheduleData = {
                             tag: { en: 'Opening', pt: 'Abertura', es: 'Inauguración' },
                             title: {
                                 en: 'Opening Ceremony',
-                                pt: 'Cerimônia de Abertura',
+                                pt: 'Cerimônia de abertura',
                                 es: 'Inauguración'
                             }
                         }
@@ -204,94 +220,93 @@ export const scheduleData = {
                         {
                             location: { en: 'Salón 5', pt: 'Salão 5', es: 'Salón 5' },
                             type: SessionType.KEYNOTE,
-                            tag: { en: 'Keynote', pt: 'Palestra Principal', es: 'Keynote' },
+                            tag: { en: 'Keynote', pt: 'Palestra principal', es: 'Conferencia magistral' },
                             title: {
-                                en: 'Keynote: Juan Pablo Hourcade',
-                                pt: 'Palestra Principal: Juan Pablo Hourcade',
-                                es: 'Keynote: Juan Pablo Hourcade'
+                                en: 'Human factors, computing, and children',
+                                pt: 'Fatores humanos, informática e crianças',
+                                es: 'Factores humanos, informática y niños'
                             },
-                            speaker: 'Juan Pablo Hourcade'
+                            speaker: 'Dr. Juan Pablo Hourcade'
                         }
                     ]
                 },
-                // 11:00 – 12:00: Short Papers | Hackathon | Feria+Pósters | Panel
                 {
                     time: '11:00 - 12:00',
                     sessions: [
                         {
                             location: { en: 'Salón 5', pt: 'Salão 5', es: 'Salón 5' },
                             type: SessionType.PAPER_SESSION,
-                            tag: {
-                                en: 'Short Papers',
-                                pt: 'Short Papers',
-                                es: 'Short Papers'
-                            },
+                            tag: { en: 'Short Papers and Graduate Colloquium', pt: 'Short Papers e Colóquio de Pós-Graduação', es: 'Short Papers y Consorcio de Posgrado' },
                             title: {
-                                en: 'Short Papers & Graduate Consortium',
-                                pt: 'Short Papers e Consórcio de Pós-Graduação',
+                                en: 'Short Papers and Graduate Colloquium',
+                                pt: 'Short Papers e Colóquio de Pós-Graduação',
                                 es: 'Short Papers y Consorcio de Posgrado'
                             },
-                            papers: shortPapers
+                            papers: shortPapersAndColloquium
                         },
                         {
                             location: { en: 'Salón 4', pt: 'Salão 4', es: 'Salón 4' },
                             type: SessionType.WORKSHOP,
-                            tag: { en: 'Hackathon', pt: 'Hackathon', es: 'Hackathon' },
+                            tag: { en: 'Hackathon Workshop', pt: 'Workshop Hackathon', es: 'Taller Hackatón' },
                             title: {
                                 en: 'Hackathon Workshop',
                                 pt: 'Workshop Hackathon',
-                                es: 'Taller Hackathon'
+                                es: 'Taller Hackatón'
                             },
                             continuation: true
                         },
                         {
                             location: { en: 'Lobby', pt: 'Vestíbulo', es: 'Vestíbulo' },
                             type: SessionType.OTHER,
-                            tag: {
-                                en: 'Posters & Fair',
-                                pt: 'Pôsteres e Feira',
-                                es: 'Pósters y Feria'
-                            },
+                            tag: { en: 'Vocational Fair', pt: 'Feira vocacional', es: 'Feria vocacional' },
                             title: {
-                                en: 'SDC Poster Exhibition & Education Fair',
-                                pt: 'Exposição de Pôsteres SDC e Feira Educativa',
-                                es: 'Exposición de Pósters SDC y Feria Educativa'
-                            },
-                            papers: sdcTeams
+                                en: 'Vocational Fair',
+                                pt: 'Feira vocacional',
+                                es: 'Feria vocacional'
+                            }
                         },
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
+                            location: { en: 'Poster area', pt: 'Área de pôsteres', es: 'Área de pósters' },
+                            type: SessionType.COMPETITION,
+                            tag: { en: 'Poster Presentation', pt: 'Apresentação de pôsteres', es: 'Presentación de pósters' },
+                            title: {
+                                en: 'Poster Presentation',
+                                pt: 'Apresentação de pôsteres',
+                                es: 'Presentación de pósters'
                             },
+                            papers: [
+                                ...sdcPosterTeams,
+                                { title: 'Construcción y validación de un instrumento para medir la presencia de patrones oscuros en productos digitales. Jhon Alexander Garcia Camargo' }
+                            ]
+                        },
+                        {
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
                             type: SessionType.PANEL,
                             tag: { en: 'Panel', pt: 'Painel', es: 'Panel' },
                             title: {
-                                en: 'Women Who Design: Experiences, Challenges & Realities in UX/UI',
-                                pt: 'Mulheres que Projetam: Experiências, Desafios e Realidades em UX/UI',
+                                en: 'Women who design: experiences, challenges, and realities in UX/UI',
+                                pt: 'Mulheres que projetam: experiências, desafios e realidades em UX/UI',
                                 es: 'Mujeres que diseñan: experiencias, retos y realidades en UX/UI'
                             },
                             panelists: [
-                                'M.C. María del Rosario Peralta Calvo',
-                                'Alejandra Dueñas',
-                                'Por confirmar – Agencia de Tecnologías'
+                                'M.C. María del Rosario Peralta Calvo (Universidad de la Cañada)',
+                                'Alejandra Dueñas (Escuela de Diseño del INBA, EDINBA)',
+                                'Por confirmar - Agencia de Tecnologías e Innovación Digital (ATID Oax)'
                             ],
-                            moderator: 'Odile Juárez'
+                            moderator: 'Odile Juárez (Mamá Tech, CEO & Co. Founder Mayordomm)'
                         }
                     ]
                 },
-                // 12:00 – 14:00: Short Papers cont | Hackathon cont | Pósters cont | SDC Presentations
                 {
                     time: '12:00 - 14:00',
                     sessions: [
                         {
                             location: { en: 'Salón 5', pt: 'Salão 5', es: 'Salón 5' },
                             type: SessionType.PAPER_SESSION,
-                            tag: { en: 'Short Papers', pt: 'Short Papers', es: 'Short Papers' },
+                            tag: { en: 'Short Papers and Graduate Colloquium', pt: 'Short Papers e Colóquio de Pós-Graduação', es: 'Short Papers y Consorcio de Posgrado' },
                             title: {
-                                en: 'Short Papers & Graduate Consortium',
-                                pt: 'Short Papers e Consórcio de Pós-Graduação',
+                                en: 'Short Papers and Graduate Colloquium',
+                                pt: 'Short Papers e Colóquio de Pós-Graduação',
                                 es: 'Short Papers y Consorcio de Posgrado'
                             },
                             continuation: true
@@ -299,41 +314,44 @@ export const scheduleData = {
                         {
                             location: { en: 'Salón 4', pt: 'Salão 4', es: 'Salón 4' },
                             type: SessionType.WORKSHOP,
-                            tag: { en: 'Hackathon', pt: 'Hackathon', es: 'Hackathon' },
+                            tag: { en: 'Hackathon Workshop', pt: 'Workshop Hackathon', es: 'Taller Hackatón' },
                             title: {
                                 en: 'Hackathon Workshop',
                                 pt: 'Workshop Hackathon',
-                                es: 'Taller Hackathon'
+                                es: 'Taller Hackatón'
                             },
                             continuation: true
                         },
                         {
                             location: { en: 'Lobby', pt: 'Vestíbulo', es: 'Vestíbulo' },
                             type: SessionType.OTHER,
-                            tag: {
-                                en: 'Posters & Fair',
-                                pt: 'Pôsteres e Feira',
-                                es: 'Pósters y Feria'
-                            },
+                            tag: { en: 'Vocational Fair', pt: 'Feira vocacional', es: 'Feria vocacional' },
                             title: {
-                                en: 'SDC Poster Exhibition & Education Fair',
-                                pt: 'Exposição de Pôsteres SDC e Feira Educativa',
-                                es: 'Exposición de Pósters SDC y Feria Educativa'
+                                en: 'Vocational Fair',
+                                pt: 'Feira vocacional',
+                                es: 'Feria vocacional'
                             },
                             continuation: true
                         },
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
-                            },
+                            location: { en: 'Poster area', pt: 'Área de pôsteres', es: 'Área de pósters' },
                             type: SessionType.COMPETITION,
-                            tag: { en: 'SDC – Presentations', pt: 'CDE – Apresentações', es: 'SDC – Presentaciones' },
+                            tag: { en: 'Poster Presentation', pt: 'Apresentação de pôsteres', es: 'Presentación de pósters' },
                             title: {
-                                en: 'Student Design Competition – Presentations',
-                                pt: 'Competição de Design Estudantil – Apresentações',
-                                es: 'Competencia de Diseño Estudiantil – Presentaciones'
+                                en: 'Poster Presentation',
+                                pt: 'Apresentação de pôsteres',
+                                es: 'Presentación de pósters'
+                            },
+                            continuation: true
+                        },
+                        {
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
+                            type: SessionType.COMPETITION,
+                            tag: { en: 'SDC Presentations', pt: 'Apresentações CDE', es: 'Presentaciones SDC' },
+                            title: {
+                                en: 'Student Design Competition Presentations',
+                                pt: 'Apresentações da Competição de Design Estudantil',
+                                es: 'Presentaciones de la Competencia de Diseño Estudiantil'
                             },
                             papers: [
                                 { title: 'Equipo 1' },
@@ -360,11 +378,11 @@ export const scheduleData = {
                         {
                             location: { en: 'Salón 4', pt: 'Salão 4', es: 'Salón 4' },
                             type: SessionType.WORKSHOP,
-                            tag: { en: 'Hackathon', pt: 'Hackathon', es: 'Hackathon' },
+                            tag: { en: 'Hackathon Competition', pt: 'Competição Hackathon', es: 'Competencia Hackatón' },
                             title: {
                                 en: 'Hackathon Competition',
                                 pt: 'Competição Hackathon',
-                                es: 'Hackathon – Competencia'
+                                es: 'Competencia Hackatón'
                             }
                         }
                     ]
@@ -373,25 +391,19 @@ export const scheduleData = {
                     time: '19:00 - 20:00',
                     sessions: [
                         {
-                            location: {
-                                en: 'Centro Gastronómico',
-                                pt: 'Centro Gastronómico',
-                                es: 'Centro Gastronómico'
-                            },
+                            location: { en: 'Centro Gastronómico', pt: 'Centro Gastronômico', es: 'Centro Gastronómico' },
                             type: SessionType.NETWORKING,
-                            tag: { en: 'Social Event', pt: 'Evento Social', es: 'Evento Social' },
+                            tag: { en: 'Social Event', pt: 'Evento social', es: 'Evento social' },
                             title: {
-                                en: 'Welcome Dinner & Calenda',
-                                pt: 'Jantar de Boas-Vindas e Calenda',
-                                es: 'Cena de Bienvenida y Calenda'
+                                en: 'Welcome Dinner and Calenda',
+                                pt: 'Jantar de boas-vindas e Calenda',
+                                es: 'Cena de bienvenida y Calenda'
                             }
                         }
                     ]
                 }
             ]
         },
-
-        // ─── DÍA 3: viernes 29 de mayo ─────────────────────────────────────────────
         {
             id: 'day3',
             date: '2026-05-29',
@@ -406,28 +418,39 @@ export const scheduleData = {
                 es: 'Temática: Inclusión'
             },
             venue: {
-                en: 'Convention Center – Multipurpose Hall',
-                pt: 'Centro de Convenções – Salão Multifuncional',
-                es: 'Centro de Convenciones – Salón Multifuncional'
+                en: 'Convention Center - Multipurpose Hall',
+                pt: 'Centro de Convenções - Salão Multifuncional',
+                es: 'Centro de Convenciones - Salón Multifuncional'
             },
             timeSlots: [
                 {
                     time: '09:00 - 10:00',
                     sessions: [
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
-                            },
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
                             type: SessionType.KEYNOTE,
-                            tag: { en: 'Keynote', pt: 'Palestra Principal', es: 'Keynote' },
+                            tag: { en: 'Keynote', pt: 'Palestra principal', es: 'Conferencia magistral' },
                             title: {
-                                en: 'Keynote: Odile Juárez – Mamá Tech',
-                                pt: 'Palestra Principal: Odile Juárez – Mamá Tech',
-                                es: 'Keynote: Odile Juárez – Mamá Tech'
+                                en: 'Keynote - Odile Juárez',
+                                pt: 'Palestra principal - Odile Juárez',
+                                es: 'Conferencia magistral - Odile Juárez'
                             },
-                            speaker: 'Odile Juárez'
+                            speaker: 'Odile Juárez',
+                            subtitle: {
+                                en: 'Mamá Tech, CEO & Co. Founder Mayordomm',
+                                pt: 'Mamá Tech, CEO & Co. Founder Mayordomm',
+                                es: 'Mamá Tech, CEO & Co. Founder Mayordomm'
+                            }
+                        },
+                        {
+                            location: { en: 'Lobby', pt: 'Vestíbulo', es: 'Vestíbulo' },
+                            type: SessionType.OTHER,
+                            tag: { en: 'Vocational Fair', pt: 'Feira vocacional', es: 'Feria vocacional' },
+                            title: {
+                                en: 'Vocational Fair',
+                                pt: 'Feira vocacional',
+                                es: 'Feria vocacional'
+                            }
                         }
                     ]
                 },
@@ -435,19 +458,20 @@ export const scheduleData = {
                     time: '10:00 - 11:00',
                     sessions: [
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
-                            },
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
                             type: SessionType.OTHER,
-                            tag: { en: 'Talk', pt: 'Palestra', es: 'Conferencia' },
+                            tag: { en: 'Talk 1', pt: 'Conferência 1', es: 'Conferencia 1' },
                             title: {
-                                en: 'Talk 1: Vicman',
-                                pt: 'Palestra 1: Vicman',
-                                es: 'Conferencia 1: Vicman'
+                                en: 'Victor Manuel García',
+                                pt: 'Victor Manuel García',
+                                es: 'Victor Manuel García'
                             },
-                            speaker: 'Vicman'
+                            speaker: 'Victor Manuel García',
+                            subtitle: {
+                                en: 'Senior Agil Leader IDS',
+                                pt: 'Senior Agil Leader IDS',
+                                es: 'Senior Agil Leader IDS'
+                            }
                         }
                     ]
                 },
@@ -455,20 +479,20 @@ export const scheduleData = {
                     time: '11:00 - 12:00',
                     sessions: [
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
-                            },
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
                             type: SessionType.OTHER,
-                            tag: { en: 'Talk', pt: 'Palestra', es: 'Conferencia' },
+                            tag: { en: 'Talk 2', pt: 'Conferência 2', es: 'Conferencia 2' },
                             title: {
-                                en: 'Talk 2: David Soto – Walmart',
-                                pt: 'Palestra 2: David Soto – Walmart',
-                                es: 'Conferencia 2: David Soto – Walmart'
+                                en: 'Beyond the shopping cart: transforming buying behavior into digital financial access',
+                                pt: 'Além do carrinho de compras: transformando o comportamento de compra em acesso financeiro digital',
+                                es: 'Más allá del carrito de compras: transformando el comportamiento de compra en acceso financiero digital'
                             },
-                            speaker: 'David Soto',
-                            subtitle: { en: 'Walmart', pt: 'Walmart', es: 'Walmart' }
+                            speaker: 'David Soto Ríos',
+                            subtitle: {
+                                en: 'Walmart',
+                                pt: 'Walmart',
+                                es: 'Walmart'
+                            }
                         }
                     ]
                 },
@@ -476,19 +500,15 @@ export const scheduleData = {
                     time: '12:00 - 13:00',
                     sessions: [
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
-                            },
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
                             type: SessionType.OTHER,
-                            tag: { en: 'Talk', pt: 'Palestra', es: 'Conferencia' },
+                            tag: { en: 'Talk 3', pt: 'Conferência 3', es: 'Conferencia 3' },
                             title: {
-                                en: 'Talk 3: Isac Mancera',
-                                pt: 'Palestra 3: Isac Mancera',
-                                es: 'Conferencia 3: Isac Mancera'
+                                en: 'Gustavo Isaac Mancera Betancourt',
+                                pt: 'Gustavo Isaac Mancera Betancourt',
+                                es: 'Gustavo Isaac Mancera Betancourt'
                             },
-                            speaker: 'Isac Mancera'
+                            speaker: 'Mtro. Gustavo Isaac Mancera Betancourt'
                         }
                     ]
                 },
@@ -496,21 +516,17 @@ export const scheduleData = {
                     time: '13:00 - 14:00',
                     sessions: [
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
-                            },
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
                             type: SessionType.COMPETITION,
-                            tag: { en: 'SDC – Final', pt: 'CDE – Final', es: 'SDC – Final' },
+                            tag: { en: 'SDC Final', pt: 'Final CDE', es: 'Final SDC' },
                             title: {
-                                en: 'Student Design Competition – Final',
-                                pt: 'Competição de Design Estudantil – Final',
-                                es: 'Competencia de Diseño Estudiantil – Final'
+                                en: 'Student Design Competition Final',
+                                pt: 'Final da Competição de Design Estudantil',
+                                es: 'Final de la Competencia de Diseño Estudiantil'
                             },
                             papers: [
-                                { title: 'Equipo 1 – México' },
-                                { title: 'Equipo 1 – Brasil' }
+                                { title: 'Primer Lugar - Sede Brasil' },
+                                { title: 'Primer Lugar - Sede México' }
                             ]
                         }
                     ]
@@ -519,16 +535,12 @@ export const scheduleData = {
                     time: '14:00 - 15:00',
                     sessions: [
                         {
-                            location: {
-                                en: 'Multipurpose Hall',
-                                pt: 'Salão Multifuncional',
-                                es: 'Salón Multifuncional'
-                            },
+                            location: { en: 'Multipurpose Hall', pt: 'Salão Multifuncional', es: 'Salón Multifuncional' },
                             type: SessionType.OTHER,
                             tag: { en: 'Closing', pt: 'Encerramento', es: 'Clausura' },
                             title: {
                                 en: 'Closing Ceremony',
-                                pt: 'Cerimônia de Encerramento',
+                                pt: 'Cerimônia de encerramento',
                                 es: 'Clausura'
                             }
                         }

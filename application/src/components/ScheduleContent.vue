@@ -5,6 +5,7 @@ import { scheduleData, SessionType } from '@/data/scheduleData.js'
 
 const { locale } = useI18n()
 const activeDay = ref(scheduleData.days[0].id)
+const expandedSessions = ref({})
 
 const currentDay = computed(() =>
     scheduleData.days.find(d => d.id === activeDay.value)
@@ -14,6 +15,58 @@ function getLocalizedText(text) {
     if (typeof text === 'string') return text
     if (!text) return ''
     return text[locale.value] || text.es || text.en || ''
+}
+
+function getSessionKey(dayId, slotIdx, sessionIdx) {
+    return `${dayId}-${slotIdx}-${sessionIdx}`
+}
+
+function hasExpandableDetails(session) {
+    return Boolean(
+        session.chair ||
+        session.moderator ||
+        session.description ||
+        (session.panelists && session.panelists.length) ||
+        (session.papers && session.papers.length)
+    )
+}
+
+function isSessionExpanded(dayId, slotIdx, sessionIdx) {
+    return Boolean(expandedSessions.value[getSessionKey(dayId, slotIdx, sessionIdx)])
+}
+
+function toggleSession(dayId, slotIdx, sessionIdx) {
+    const key = getSessionKey(dayId, slotIdx, sessionIdx)
+    expandedSessions.value = {
+        ...expandedSessions.value,
+        [key]: !expandedSessions.value[key]
+    }
+}
+
+function getSessionMeta(session) {
+    const parts = []
+
+    if (session.papers?.length) {
+        parts.push(
+            getLocalizedText({
+                en: `${session.papers.length} item${session.papers.length > 1 ? 's' : ''}`,
+                pt: `${session.papers.length} item${session.papers.length > 1 ? 's' : ''}`,
+                es: `${session.papers.length} elemento${session.papers.length > 1 ? 's' : ''}`
+            })
+        )
+    }
+
+    if (session.panelists?.length) {
+        parts.push(
+            getLocalizedText({
+                en: `${session.panelists.length} panelist${session.panelists.length > 1 ? 's' : ''}`,
+                pt: `${session.panelists.length} painelista${session.panelists.length > 1 ? 's' : ''}`,
+                es: `${session.panelists.length} ponente${session.panelists.length > 1 ? 's' : ''}`
+            })
+        )
+    }
+
+    return parts.join(' • ')
 }
 
 const sessionConfig = {
@@ -75,8 +128,8 @@ const typeLabels = {
         <div>
             <h2 class="text-white fs-5 mb-0 fw-bold">{{ getLocalizedText({ en: 'Event Schedule', pt: 'Agenda do Evento', es: 'Agenda del Evento' }) }}</h2>
             <span class="text-white-50" style="font-size: 0.95rem;">
-                {{ scheduleData.edition }} &bull; {{ getLocalizedText({ en: 'May 27–29, 2026', pt: '27 a 29 de maio de 2026', es: '27 al 29 de mayo de 2026' }) }}
-                &bull; {{ scheduleData.venue }}
+                {{ getLocalizedText(scheduleData.edition) }} &bull; {{ getLocalizedText({ en: 'May 27–29, 2026', pt: '27 a 29 de maio de 2026', es: '27 al 29 de mayo de 2026' }) }}
+                &bull; {{ getLocalizedText(scheduleData.venue) }}
             </span>
         </div>
     </div>
@@ -180,43 +233,71 @@ const typeLabels = {
                                         <strong>{{ session.speaker }}</strong>
                                     </p>
 
-                                    <p v-if="session.chair" class="mb-1" style="font-size: 0.8rem;">
-                                        <i class="fa-solid fa-user me-1 text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">{{ getLocalizedText({ en: 'Chair:', pt: 'Chair:', es: 'Coordinador:' }) }}</span>
-                                        {{ session.chair }}
-                                    </p>
-
-                                    <div v-if="session.panelists && session.panelists.length" class="mb-1">
-                                        <small class="text-muted d-block mb-1">
-                                            <i class="fa-solid fa-users me-1" aria-hidden="true"></i>
-                                            {{ getLocalizedText({ en: 'Panelists:', pt: 'Painelistas:', es: 'Ponentes:' }) }}
-                                        </small>
-                                        <ul class="list-unstyled mb-0 ps-1">
-                                            <li v-for="(p, i) in session.panelists" :key="i" class="text-dark" style="font-size: 0.8rem; line-height: 1.5;">
-                                                <i class="fa-solid fa-circle-dot me-1 text-muted" style="font-size: 0.5rem; vertical-align: middle;" aria-hidden="true"></i>{{ p }}
-                                            </li>
-                                        </ul>
+                                    <div v-if="hasExpandableDetails(session)" class="session-details-summary mt-2">
+                                        <p v-if="getSessionMeta(session)" class="text-muted mb-2" style="font-size: 0.78rem;">
+                                            <i class="fa-solid fa-list-ul me-1" aria-hidden="true"></i>{{ getSessionMeta(session) }}
+                                        </p>
+                                        <button
+                                            type="button"
+                                            class="btn btn-sm btn-outline-secondary rounded-pill px-3"
+                                            :aria-expanded="isSessionExpanded(currentDay.id, slotIdx, sIdx)"
+                                            :aria-controls="'session-details-' + getSessionKey(currentDay.id, slotIdx, sIdx)"
+                                            @click="toggleSession(currentDay.id, slotIdx, sIdx)"
+                                        >
+                                            <i
+                                                class="fa-solid me-1"
+                                                :class="isSessionExpanded(currentDay.id, slotIdx, sIdx) ? 'fa-chevron-up' : 'fa-chevron-down'"
+                                                aria-hidden="true"
+                                            ></i>
+                                            {{ isSessionExpanded(currentDay.id, slotIdx, sIdx)
+                                                ? getLocalizedText({ en: 'Hide details', pt: 'Ocultar detalhes', es: 'Ocultar detalles' })
+                                                : getLocalizedText({ en: 'View details', pt: 'Ver detalhes', es: 'Ver detalles' }) }}
+                                        </button>
                                     </div>
 
-                                    <p v-if="session.moderator" class="mb-1" style="font-size: 0.8rem;">
-                                        <i class="fa-solid fa-gavel me-1 text-muted" aria-hidden="true"></i>
-                                        <span class="text-muted">{{ getLocalizedText({ en: 'Moderator:', pt: 'Moderação:', es: 'Moderadora:' }) }}</span>
-                                        {{ session.moderator }}
-                                    </p>
+                                    <div
+                                        v-if="hasExpandableDetails(session) && isSessionExpanded(currentDay.id, slotIdx, sIdx)"
+                                        :id="'session-details-' + getSessionKey(currentDay.id, slotIdx, sIdx)"
+                                        class="session-details mt-3 pt-3 border-top"
+                                    >
+                                        <p v-if="session.chair" class="mb-2" style="font-size: 0.8rem;">
+                                            <i class="fa-solid fa-user me-1 text-muted" aria-hidden="true"></i>
+                                            <span class="text-muted">{{ getLocalizedText({ en: 'Chair:', pt: 'Coordenação:', es: 'Coordinación:' }) }}</span>
+                                            {{ session.chair }}
+                                        </p>
 
-                                    <div v-if="session.papers && session.papers.length" class="mt-2">
-                                        <div v-for="(paper, pIdx) in session.papers" :key="pIdx" class="d-flex mb-1" style="font-size: 0.78rem;">
-                                            <span v-if="paper.time" class="text-dark fw-bold me-2 flex-shrink-0">{{ paper.time }} -</span>
-                                            <span v-else class="text-muted me-1 flex-shrink-0">{{ pIdx + 1 }})</span>
-                                            <div>
-                                                <span class="fw-semibold">{{ paper.title }}</span>
-                                                <br v-if="paper.authors" /><span v-if="paper.authors" class="text-muted fst-italic">{{ paper.authors }}</span>
+                                        <div v-if="session.panelists && session.panelists.length" class="mb-2">
+                                            <small class="text-muted d-block mb-1">
+                                                <i class="fa-solid fa-users me-1" aria-hidden="true"></i>
+                                                {{ getLocalizedText({ en: 'Panelists:', pt: 'Painelistas:', es: 'Ponentes:' }) }}
+                                            </small>
+                                            <ul class="list-unstyled mb-0 ps-1">
+                                                <li v-for="(p, i) in session.panelists" :key="i" class="text-dark" style="font-size: 0.8rem; line-height: 1.5;">
+                                                    <i class="fa-solid fa-circle-dot me-1 text-muted" style="font-size: 0.5rem; vertical-align: middle;" aria-hidden="true"></i>{{ p }}
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <p v-if="session.moderator" class="mb-2" style="font-size: 0.8rem;">
+                                            <i class="fa-solid fa-gavel me-1 text-muted" aria-hidden="true"></i>
+                                            <span class="text-muted">{{ getLocalizedText({ en: 'Moderator:', pt: 'Moderação:', es: 'Moderación:' }) }}</span>
+                                            {{ session.moderator }}
+                                        </p>
+
+                                        <div v-if="session.papers && session.papers.length" class="mt-2">
+                                            <div v-for="(paper, pIdx) in session.papers" :key="pIdx" class="d-flex mb-2" style="font-size: 0.78rem;">
+                                                <span v-if="paper.time" class="text-dark fw-bold me-2 flex-shrink-0">{{ paper.time }} -</span>
+                                                <span v-else class="text-muted me-1 flex-shrink-0">{{ pIdx + 1 }})</span>
+                                                <div>
+                                                    <span class="fw-semibold">{{ paper.title }}</span>
+                                                    <br v-if="paper.authors" /><span v-if="paper.authors" class="text-muted fst-italic">{{ paper.authors }}</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div v-if="session.description" class="mt-1">
-                                        <small class="text-muted fst-italic">{{ getLocalizedText(session.description) }}</small>
+                                        <div v-if="session.description" class="mt-1">
+                                            <small class="text-muted fst-italic">{{ getLocalizedText(session.description) }}</small>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -305,5 +386,25 @@ const typeLabels = {
 
 .session-card:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.session-details-summary .btn {
+    font-size: 0.78rem;
+    border-color: rgba(108, 117, 125, 0.35);
+}
+
+.session-details {
+    animation: fadeInDetails 0.2s ease;
+}
+
+@keyframes fadeInDetails {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>
