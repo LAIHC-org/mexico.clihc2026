@@ -84,6 +84,14 @@
                                     {{ $t("nav.rates_and_registration") }}
                                 </RouterLink>
                             </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link uline"
+                                    href="https://congreso.artesanosdigitalescom.com.mx/tutoriales#tutoriales"
+                                >
+                                    {{ $t("nav.tutorial_registration") }}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

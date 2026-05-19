@@ -153,7 +153,22 @@
 												</div>
 											</RouterLink>
 										</li>
-										<!--
+										<li>
+										<a
+											href="https://congreso.artesanosdigitalescom.com.mx/tutoriales#tutoriales"
+											class="dropdown-item border-radius-md"
+										>
+											<div class="d-flex">
+												<div>
+													<span
+														class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+														{{ $t("nav.tutorial_registration") }}
+													</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!--
 										<li>
 											<RouterLink :to="Tr.i18nRoute({ name: 'accessibility-FAQ' })" 
 												class="dropdown-item border-radius-md"

@@ -45,6 +45,7 @@
         "rates_and_registration_title": "Inscripciones",
         "rates_and_registration": "Inscripciones",
         "rates_and_registration_message": "Tarifas y proceso de inscripción.",
+        "tutorial_registration": "Talleres disponibles",
         "accessibility_faqs": "Preguntas frecuentes sobre accesibilidad",
         "program": "Programa",
         "schedule": "Agenda del evento",
@@ -63,7 +64,7 @@
     "jumbotron":{
         "conference": "Evento presencial oficial de la XII Conferencia Latinoamericana de Interacción Humano-Computadora.",
         "date": "Del 27 al 29 de mayo de 2026",
-        "button": "Participa en el evento en México"
+        "button": "Registrarme al evento"
     },
     "about":{
         "about_title": "¿Qué es el Evento México de CLIHC 2026?",

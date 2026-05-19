@@ -91,16 +91,12 @@ export default {
                                 </p>
 
                                 <p class="lead pt-2">
-                                    <RouterLink
-                                        :to="
-                                            Tr.i18nRoute({
-                                                name: 'call-for-participation',
-                                            })
-                                        "
+                                    <a
+                                        href="https://congreso.artesanosdigitalescom.com.mx/registro"
                                         class="btn btn-lg bg-gradient-yellow btn-round"
                                     >
                                         {{ $t("jumbotron.button") }}
-                                    </RouterLink>
+                                    </a>
 
                                     <!--
 										<template v-if="currentComponent">
