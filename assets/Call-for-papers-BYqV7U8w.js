@@ -1,1 +1,0 @@
-import{O as e}from"./OrganizerItem-D_KUPPaG.js";import{_ as t,c as r,o,T as a}from"./index-DuQ9Aphr.js";const s={components:{OrganizerItem:e},setup(){return{Tr:a}}},c={class:"mt-6 text-center"};function n(p,m,_,i,l,u){return o(),r("p",c,"La convocatoria de artículos cortos será anunciada próximamente.")}const x=t(s,[["render",n]]);export{x as default};

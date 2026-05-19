@@ -1,1 +1,0 @@
-import{O as e}from"./OrganizerItem-D_KUPPaG.js";import{_ as r,c as t,o as a,T as s}from"./index-DuQ9Aphr.js";const o={components:{OrganizerItem:e},setup(){return{Tr:s}}},c={class:"mt-6 text-center"};function n(p,m,_,i,u,d){return a(),t("p",c,"A chamada para artigos curtos será anunciada em breve.")}const x=r(o,[["render",n]]);export{x as default};
