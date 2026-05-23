@@ -6,6 +6,7 @@ export default {
 		const hotels = [
 			{
 				name: 'Life Hotel',
+				logo: '/assets/img/logos/life.png',
 				subtitle: 'Hotel oficial da CLIHC 2026',
 				type: 'Hotel Business Class',
 				url: 'https://www.lifehotel.mx/es/index.html',
@@ -43,6 +44,7 @@ export default {
 			},
 			{
 				name: 'Hotel Villas del Sol',
+				logo: '/assets/img/logos/vsh.png',
 				url: 'https://www.villasdelsol.com.mx/es/index.html',
 				description:
 					'Villas del Sol Hotel & Bungalows e uma opção de hospedagem com amplas áreas verdes e espaços em estilo villa, ideal para participantes que buscam mais tranquilidade ou viajam em grupo. O hotel conta com piscina, restaurante e áreas recreativas.',
@@ -85,6 +87,7 @@ export default {
 			},
 			{
 				name: 'Kooch Aparthotel',
+				logo: '/assets/img/logos/kooch.png',
 				subtitle: 'Apart-hotel recomendado para participantes da CLIHC 2026',
 				url: 'https://apt-kooch.hotels-oaxaca.com/es/',
 				description:
@@ -165,6 +168,10 @@ export default {
 			</p>
 
 			<div v-for="hotel in hotels" :key="hotel.name" class="mb-5">
+				<div v-if="hotel.logo" class="hotel-logo-wrap mb-3">
+					<img :src="hotel.logo" :alt="`Logotipo de ${hotel.name}`" class="hotel-logo" />
+				</div>
+
 				<h3 class="h4 mb-2">
 					<a :href="hotel.url" target="_blank" rel="noopener noreferrer">{{ hotel.name }}</a>
 					<span v-if="hotel.subtitle"> - {{ hotel.subtitle }}</span>
@@ -249,3 +256,16 @@ export default {
 		</section>
 	</div>
 </template>
+
+<style scoped>
+.hotel-logo-wrap {
+	max-width: 240px;
+}
+
+.hotel-logo {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+</style>
