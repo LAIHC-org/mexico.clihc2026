@@ -107,7 +107,7 @@
 															{{ $t("nav.calls_hackathon") }}
 														</span>
 														<span class="text-sm text-dark">
-															{{ $t("about.upcoming") }}
+															{{ $t("nav.calls_hackathon_message") }}
 														</span>
 													</div>
 												</div>
