@@ -137,6 +137,13 @@
         "sdc": "Competição de design estudantil (Mexico)",
         "cgc": "Colóquio de pós-graduação (Mexico)"
     },
+    "hackathon_call": {
+        "description": "Leia a chamada do Hackathon CLIHC 2026 online ou baixe o PDF.",
+        "open_button": "Abrir PDF em nova aba",
+        "download_button": "Baixar PDF",
+        "fallback": "Se o documento incorporado não aparecer no seu navegador, você também pode",
+        "open_link": "abri-lo aqui"
+    },
     "register": {
         "register_button": "Registre seu comprovante de pagamento"
     },

@@ -84,7 +84,7 @@ const router = createRouter({
         {
           path: 'call-for-hackathon',
           name: 'call-for-hackathon',
-          component: () => import('../views/ComingSoonView.vue'),
+          component: () => import('../views/CallForHackathonView.vue'),
           meta: {
             title: "CLIHC 2026 - Call for hackathon",
             pageTitleKey: "nav.calls_hackathon",

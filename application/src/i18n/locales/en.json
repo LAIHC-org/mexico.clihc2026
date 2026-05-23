@@ -136,6 +136,13 @@
         "sdc": "Student Design Competition (Mexico)",
         "cgc": "Graduate Colloquium (Mexico)"
     },
+    "hackathon_call": {
+        "description": "Read the CLIHC 2026 Hackathon call online or download it as a PDF.",
+        "open_button": "Open PDF in a new tab",
+        "download_button": "Download PDF",
+        "fallback": "If the embedded document does not display in your browser, you can also",
+        "open_link": "open it here"
+    },
     "register": {
         "register_button": "Register your payment receipt"
     },
