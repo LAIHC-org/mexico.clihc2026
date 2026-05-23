@@ -3,52 +3,98 @@ import Tr from '@/i18n/translation'
 
 export default {
 	setup() {
-		return { Tr }
+		const hotelLifeRooms = [
+			{
+				type: 'Simples',
+				rate: '$1,200.00',
+				description: 'Uma cama Queen para 1 ou 2 pessoas'
+			},
+			{
+				type: 'Duplo',
+				rate: '$1,400.00',
+				description: 'Duas camas de casal para 1 ou 2 pessoas'
+			}
+		]
+
+		const koochRooms = [
+			{
+				type: 'Suite Kooch',
+				rate: '$1,200.00',
+				description: 'Uma cama de casal para 01 ou 02 pessoas'
+			}
+		]
+
+		return { Tr, hotelLifeRooms, koochRooms }
 	}
 }
 </script>
 
 <template>
-	<!--
-	<p>
-		Bem-vindo à XI Conferência Latino-Americana de Interação Humano-Computador (CLIHC 2023). Temos o prazer de recebê-lo neste evento excepcional que reúne comunidades de pesquisa em HCI da América Latina e de todo o mundo. Esta página "Primeiros Passos" foi projetada para fornecer informações essenciais para a sua participação na conferência.
-	</p>
+	<div class="getting-started-guide">
+		<p>
+			O primeiro passo para participar da CLIHC 2026 é realizar sua inscrição na plataforma do evento. Lá você
+			encontrará as tarifas vigentes e o processo para concluir sua inscrição.
+		</p>
 
-	<ol class="list-group list-group-numbered">
-		<li class="list-group-item d-flex justify-content-between align-items-start">
-			<div class="ms-2 me-auto">
-				<div class="fw-bold">
-					<RouterLink :to="Tr.i18nRoute({ name: 'getting-started', hash: '#rates-and-registration' })"
-						class="uline">
-						Inscrição e Pagamento:
-					</RouterLink>
+		<div class="my-4">
+			<RouterLink :to="Tr.i18nRoute({ name: 'registration' })" class="btn btn-primary">
+				Ir para inscrição
+			</RouterLink>
+		</div>
+
+		<section class="mt-5">
+			<h2 class="h3 mb-4">Hospedagem disponível</h2>
+
+			<div class="mb-5">
+				<h3 class="h4 mb-3">HOTEL LIFE</h3>
+				<div class="table-responsive">
+					<table class="table table-striped align-middle">
+						<thead>
+							<tr>
+								<th scope="col">Tipo de quarto</th>
+								<th scope="col">Tarifa</th>
+								<th scope="col">Descrição</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr v-for="room in hotelLifeRooms" :key="room.type">
+								<td>{{ room.type }}</td>
+								<td>{{ room.rate }}</td>
+								<td>{{ room.description }}</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				Obtenha informações sobre como se inscrever e pagar, garantindo a sua presença no CLIHC 2023, com instruções para pagamentos com ou sem fatura.
+				<p class="mb-1">Tarifas por quarto por noite com impostos incluídos.</p>
+				<p class="mb-1">Café da manhã incluído.</p>
+				<p class="mb-1">Pessoa extra: $250.00.</p>
+				<p class="mb-0">Tarifas sujeitas à disponibilidade.</p>
 			</div>
-		</li>
-	</ol>
 
-	<h2 id="rates-and-registration" class="mt-5 h3">Inscrição e Pagamento:</h2>
-	<div>
-		<p>Para participar da conferência, o primeiro passo é o processo de pagamento e inscrição. Recomendamos verificar as informações relacionadas a  <RouterLink :to="Tr.i18nRoute({ name: 'registration' })" class="uline">{{ $t("nav.rates_and_registration") }}</RouterLink>, onde você encontrará detalhes sobre diferentes tarifas com base nas opções de participação, bem como custos de oficinas e informações de inscrição para autores.</p>
-
-		<h3 class="h4">Instruções de Pagamento:</h3>
-
-		<p>Os pagamentos para o Congresso CLIHC2023 serão tratados da seguinte forma:</p>
-
-		<ul>
-			<li><strong>Pagamento sem fatura: </strong> Você deve fornecer o formulário de referência e o recibo de pagamento.</li>
-
-			<li><strong>Solicitação de fatura: </strong> Os requisitos variam dependendo da origem do pagamento:</li>
-				<ul>
-					<li><strong>Para pagamentos dentro do México</strong>, você deve fornecer o formulário de referência, o recibo de pagamento, um comprovante de situação fiscal (em nome da pessoa para quem a fatura será emitida), especificar o uso do DFDI (geralmente "Despesas Gerais") e fornecer o endereço de e-mail para o qual a fatura será enviada.</li>
-
-					<li><strong>Para pagamentos do exterior</strong>, você precisa fornecer o formulário de referência, o recibo de pagamento, as informações necessárias para a fatura e o endereço de e-mail para o qual deseja que a fatura seja enviada. Uma fatura será emitida e um recibo, semelhante ao exemplo fornecido anteriormente, será anexado.</li>
-				</ul>
-		</ul>
-
-		<p>Certifique-se de enviar todas as informações necessárias para gerar as faturas de forma oportuna. Além disso, <strong>observe que o pagamento da inscrição na conferência é um pré-requisito para se inscrever em tutoriais e oficinas, e deve ser feito separadamente.</strong></p>
+			<div>
+				<h3 class="h4 mb-3">KOOCH APARTMENT</h3>
+				<div class="table-responsive">
+					<table class="table table-striped align-middle">
+						<thead>
+							<tr>
+								<th scope="col">Tipo de quarto</th>
+								<th scope="col">Tarifa</th>
+								<th scope="col">Descrição</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr v-for="room in koochRooms" :key="room.type">
+								<td>{{ room.type }}</td>
+								<td>{{ room.rate }}</td>
+								<td>{{ room.description }}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="mb-1">Tarifas por quarto por noite com impostos incluídos.</p>
+				<p class="mb-1">Café da manhã incluído.</p>
+				<p class="mb-0">Tarifas sujeitas à disponibilidade.</p>
+			</div>
+		</section>
 	</div>
-	-->
-	<p class="mt-5 text-center">O guia de Primeiros Passos estará disponível em breve.</p>
 </template>
