@@ -31,7 +31,15 @@
                     {{ $t("nav.calls_hackathon") }}
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Prazo de envio:</strong> Em breve<br>
+            <strong class="text-primary text-gradient">Inscrições abertas:</strong>
+            <a
+                class="uline"
+                href="https://utm-hackaton.oaxaca.gob.mx"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ir para a página de inscrição
+            </a><br>
         </div>
         </li>
     </ol>    

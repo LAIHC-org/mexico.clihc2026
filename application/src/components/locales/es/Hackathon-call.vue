@@ -9,6 +9,11 @@
     <a href="/assets/docs/call-for-hackathon-clihc2026-v4-0.pdf" download="Convocatoria_Hackathon_CLIHC2026_Ver_4_0.pdf">Descargar convocatoria en PDF</a>
   </p>
 
+  <div class="alert alert-warning registration-cta" role="alert">
+    <strong>Registro al hackatón:</strong>
+    <a href="https://utm-hackaton.oaxaca.gob.mx" target="_blank" rel="noopener noreferrer">https://utm-hackaton.oaxaca.gob.mx</a>
+  </div>
+
   <h2>Resumen del evento</h2>
   <div class="table-responsive">
     <table class="table table-striped align-middle">
@@ -383,6 +388,11 @@
     <li><strong>Contacto:</strong> <a href="mailto:carlosmtz@gs.utm.mx">M.C. Carlos Alberto Martínez Sandoval - carlosmtz@gs.utm.mx</a></li>
   </ul>
 
+  <div class="alert alert-warning registration-cta" role="alert">
+    <strong>¿Listo para registrarte?</strong>
+    <a href="https://utm-hackaton.oaxaca.gob.mx" target="_blank" rel="noopener noreferrer">Ingresa aquí al sistema de registro</a>
+  </div>
+
   <p class="lead">Si te interesa la tecnología, el diseño, la Inteligencia Artificial, la creatividad o la solución de problemas reales, este hackatón es para ti. No importa si apenas estás comenzando: lo importante es participar, aprender, colaborar y proponer ideas que puedan ayudar a las personas.</p>
 </template>
 
@@ -395,5 +405,29 @@
   color: #fff;
   background-color: #0b5ed7;
   border-color: #0a58ca;
+}
+
+.registration-cta {
+  position: static;
+  z-index: auto;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  color: #664d03;
+}
+
+.registration-cta strong {
+  display: block;
+}
+
+.registration-cta a {
+  display: inline-block;
+  color: #7a2e0b;
+  font-weight: 700;
+  word-break: break-word;
 }
 </style>
