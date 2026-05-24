@@ -58,6 +58,21 @@ nav.scrolled .navbar-toggler:focus-visible {
     color: White;
 }
 
+.btn.bg-gradient-yellow,
+.btn.bg-gradient-yellow:hover,
+.btn.bg-gradient-yellow:focus,
+.btn.bg-gradient-yellow:focus-visible,
+.btn.bg-gradient-yellow:active {
+    color: #FFFFFF !important;
+}
+
+.btn.bg-gradient-yellow:hover,
+.btn.bg-gradient-yellow:focus-visible {
+    background-color: #8F2E28 !important;
+    border-color: #8F2E28 !important;
+    background-image: linear-gradient(310deg, #8F2E28 0%, #B84822 100%) !important;
+}
+
 .text-gradient.text-primary {
     background-image: linear-gradient(310deg, #a4352d 0%, #D85A28 100%);
 }
@@ -96,4 +111,14 @@ h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .
 
 .footer .nav-link, .footer a {
     color: #F6F5F2 !important;
+}
+
+.btn-primary:hover,
+.btn.bg-gradient-primary:hover,
+.btn-primary:focus-visible,
+.btn.bg-gradient-primary:focus-visible {
+    color: #FFFFFF !important;
+    background-color: #3F5D3A !important;
+    border-color: #3F5D3A !important;
+    background-image: linear-gradient(310deg, #3F5D3A 0%, #3F5D3A 100%) !important;
 }
