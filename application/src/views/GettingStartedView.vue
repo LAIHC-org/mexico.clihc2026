@@ -46,7 +46,7 @@ export default {
 <template>
   <TheHeader>
     <template #page-name>
-      {{ $t("nav.getting_started_title") }}
+      {{ $t("nav.lodging_title") }}
     </template>
   </TheHeader>
   <Breadcrumbs />

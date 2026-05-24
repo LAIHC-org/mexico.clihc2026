@@ -6,7 +6,7 @@ import Tr from '@/i18n/translation'
 
 const PARENT_GROUPS = {
   calls: { key: 'nav.calls', routeName: 'call-for-participation' },
-  participants: { key: 'nav.for_participants', routeName: 'getting-started' },
+  participants: { key: 'nav.for_participants', routeName: 'lodging' },
   program: { key: 'nav.program', routeName: 'schedule' },
   organizers: { key: 'nav.organizers', routeName: 'organizers' },
 }
@@ -14,7 +14,7 @@ const PARENT_GROUPS = {
 const PAGE_MAP = {
   'call-for-participation': { parent: PARENT_GROUPS.calls, currentKey: 'nav.calls_general' },
   'call-for-hackathon': { parent: PARENT_GROUPS.calls, currentKey: 'nav.calls_hackathon' },
-  'getting-started': { parent: PARENT_GROUPS.participants, currentKey: 'nav.getting_started' },
+  lodging: { parent: PARENT_GROUPS.participants, currentKey: 'nav.lodging' },
   'registration': { parent: PARENT_GROUPS.participants, currentKey: 'nav.rates_and_registration' },
   'schedule': { parent: PARENT_GROUPS.program, currentKey: 'nav.schedule' },
   'keynote-speakers': { parent: PARENT_GROUPS.program, currentKey: 'nav.keynotes' },

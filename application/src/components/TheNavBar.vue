@@ -126,14 +126,14 @@
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown2">
 										<li>
-											<RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })" 
+											<RouterLink :to="Tr.i18nRoute({ name: 'lodging' })" 
 												class="dropdown-item border-radius-md"
 											>
 												<div class="d-flex">
 													<div>
 														<span
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-															{{ $t("nav.getting_started") }}
+															{{ $t("nav.lodging") }}
 														</span>
 													</div>
 												</div>

@@ -143,12 +143,21 @@ const router = createRouter({
         },
         */    
         {
-          path: 'getting-started',
-          name: 'getting-started',
+          path: 'lodging',
+          name: 'lodging',
           component: () => import('../views/GettingStartedView.vue'), 
           meta: {
-            title: "CLIHC 2026 - Getting started",
+            title: "CLIHC 2026 - Official lodging",
           },
+        },
+        {
+          path: 'getting-started',
+          redirect: (to) => ({
+            name: 'lodging',
+            params: to.params,
+            query: to.query,
+            hash: to.hash,
+          }),
         },
         {
           path: 'registration',

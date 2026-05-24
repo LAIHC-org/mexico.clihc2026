@@ -71,10 +71,10 @@
                         <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.for_participants") }}</h3>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
-                                <RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })"
+                                <RouterLink :to="Tr.i18nRoute({ name: 'lodging' })"
                                     class="nav-link uline"
                                 >
-                                    {{ $t("nav.getting_started") }}
+                                    {{ $t("nav.lodging") }}
                                 </RouterLink>
                             </li>
                             <li class="nav-item">
