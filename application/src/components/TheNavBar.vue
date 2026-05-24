@@ -221,30 +221,6 @@
 												</div>
 											</RouterLink>
 										</li>
-										<li>
-											<RouterLink class="dropdown-item border-radius-md" :to="Tr.i18nRoute({ name: 'industry-government-day' })">
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-															{{ $t("nav.industry_government_day") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
-										<li>
-											<RouterLink class="dropdown-item border-radius-md" :to="Tr.i18nRoute({ name: 'hackathon' })">
-												<div class="d-flex">
-													<div>
-														<span
-															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-															{{ $t("nav.hackathon") }}
-														</span>
-													</div>
-												</div>
-											</RouterLink>
-										</li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
