@@ -1,1 +1,0 @@
-import{S as e}from"./SpeakerItem-C4X8KrU_.js";import{_ as s,c as o,o as r,T as t}from"./index-BCJhPU2I.js";const a={components:{SpeakerItem:e},setup(){return{Tr:t}}},c={class:"row mb-4"};function n(p,_,m,f,i,l){return r(),o("div",c)}const k=s(a,[["render",n]]);export{k as default};
