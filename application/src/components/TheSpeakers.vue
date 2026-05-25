@@ -4,7 +4,6 @@ import { useI18n } from 'vue-i18n'
 
 export default {
   setup() {
-  
     const { locale } = useI18n()
     const contentComponent = shallowRef(null)
 
@@ -35,7 +34,7 @@ export default {
 </script>
 
 <template>
-    <section class="">
+    <section>
         <div class="container mt-4" id="speakers">
             <div class="row">
                 <div class="col-lg-3">
@@ -47,12 +46,9 @@ export default {
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    {{ $t("soon.speakers") }}
-                    <!--
                     <template v-if="contentComponent">
                         <component :is="contentComponent" />
                     </template>
-                    -->
                 </div>
             </div>
         </div>

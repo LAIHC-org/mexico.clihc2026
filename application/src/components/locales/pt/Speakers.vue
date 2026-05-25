@@ -3,118 +3,100 @@ import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
 </script>
 
 <template>
-    <!--
     <SpeakerLargeItem>
         <template #image>
-            <img id="roberto-martinez" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/roberto.png" alt="Roberto" />
+            <img
+                id="jp-hourcade"
+                class="img border-radius-lg w-100 position-relative z-index-2"
+                src="/assets/img/people/jpOurcade.jpg"
+                alt="Juan Pablo Hourcade"
+            />
         </template>
         <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/roberto.png&quot;);">
-            </div>
+            <div
+                class="colored-shadow"
+                style="background-image: url('/assets/img/people/jpOurcade.jpg')"
+            ></div>
         </template>
-        <template #name>
-            Dr. Roberto Martinez-Maldonado
-        </template>
+        <template #name> Dr. Juan Pablo Hourcade </template>
 
+        <p class="mb-1"><strong>University of Iowa</strong></p>
+        <p class="mb-3"><strong>Keynote I.</strong> <em>"Fatores humanos, computação e crianças"</em></p>
         <p>
-            O Dr. Roberto Martinez-Maldonado recebeu o grau de Doutor em Tecnologias da Informação pela Universidade de
-            Sydney em 2014. Atualmente, ele é Professor Sênior de Análise de Aprendizado e Interação Humano-Computador na
-            Faculdade de Tecnologia da Informação e Coordenador do Centro de Análise de Aprendizado da Universidade de
-            Monash, Melbourne, VIC, Austrália. Ele é coautor de inúmeros artigos de pesquisa. Ele é o primeiro
-            australiano/mexicano a receber a Bolsa de Pesquisa da Jacobs Foundation, sediada na Suíça (2021–23), por sua
-            pesquisa pioneira em IA Centrada no Ser Humano na Educação. Sua pesquisa se concentra em avançar na compreensão
-            de questões sócio-técnicas relacionadas ao uso de inteligência artificial na educação, promovendo o uso de
-            metodologias centradas no ser humano para criar interfaces de análise de aprendizado com integridade e aprimorar
-            espaços autênticos de aprendizado com capacidades de computação de dados multimodais intensivos. Ele foi
-            Presidente do Programa da Conferência Internacional de Análise de Aprendizado e Conhecimento e da Conferência
-            Internacional de Inteligência Artificial em Educação, e é um Associado Regular do subcomitê de Aprendizado e
-            Educação da Conferência SIGCHI sobre Fatores Humanos em Sistemas Computacionais. Ele é Editor Associado do
-            International Journal of Artificial Intelligence in Education.
+            Os fatores humanos têm desempenhado um papel fundamental nas principais mudanças ao
+            longo da história da computação, tornando os processos mais eficientes, ampliando o
+            conjunto de usuários capazes de utilizar computadores e expandindo as aplicações da
+            computação. Essas transformações fizeram com que a computação se tornasse onipresente em
+            nossas vidas, afetando inclusive crianças pequenas, embora nem sempre de maneira
+            positiva. Nesta palestra, Hourcade apresenta uma visão para as tecnologias voltadas à
+            infância que contrasta com as abordagens predominantes na indústria, e expõe o exemplo
+            de uma tecnologia que avança na direção que ele propõe. Conclui abordando uma série de
+            diretrizes fundamentais para o design de tecnologias destinadas às crianças.
+        </p>
+        <p>
+            É professor no Departamento de Ciência da Computação da Universidade de Iowa e Diretor
+            de Estudos de Pós-Graduação do Programa Interdisciplinar de Pós-Graduação em
+            Informática. Sua principal área de pesquisa é a Interação Humano-Computador, com ênfase
+            no design, na implementação e na avaliação de tecnologias que apoiam a criatividade, a
+            colaboração, o bem-estar, o desenvolvimento saudável e o acesso à informação para uma
+            ampla diversidade de usuários, incluindo crianças e pessoas idosas.
+        </p>
+        <p>
+            É autor de <em>Child-Computer Interaction</em>, o primeiro livro abrangente sobre essa
+            temática, atualmente em sua segunda edição, e tem desempenhado diversos papéis de
+            liderança em sua comunidade acadêmica ao longo das últimas duas décadas. Entre eles,
+            destacam-se sua atuação como <em>Papers Co-Chair</em> nas conferências CHI 2016 e 2017,
+            <em>Co-Chair</em> da conferência IDC 2013, <em>Papers Co-Chair</em> na IDC 2003 e 2004,
+            e <em>Program Co-Chair</em> da CLIHC 2021. Além disso, integra o conselho editorial de
+            <em>Interacting with Computers</em> e do
+            <em>International Journal of Child-Computer Interaction</em>.
+        </p>
+        <p>
+            Suas palestras abordam temas como ética e processos cognitivos em tecnologias
+            interativas, o impacto dos fatores humanos na computação e a importância da
+            alfabetização digital e do acesso tecnológico na infância.
         </p>
     </SpeakerLargeItem>
 
     <SpeakerLargeItem>
         <template #image>
-            <img id="marisol-wong" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/marisol2.png" alt="Marisol 2" />
+            <img
+                id="odile-juarez"
+                class="img border-radius-lg w-100 position-relative z-index-2"
+                src="/assets/img/people/odile.png"
+                alt="Odile Juárez"
+            />
         </template>
         <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/marisol2.png&quot;);">
-            </div>
+            <div
+                class="colored-shadow"
+                style="background-image: url('/assets/img/people/odile.png')"
+            ></div>
         </template>
-        <template #name>
-            Dr. Marisol Wong-Villacres
-        </template>
+        <template #name> Ma. Odile Juárez </template>
 
+        <p class="mb-1"><strong>Mamá Tech</strong></p>
+        <p class="mb-3"><strong>Keynote II.</strong> <em>Título e resumo em breve</em></p>
         <p>
-            A Dra. Marisol Wong-Villacres é Professora Associada no Programa de Ciência da Computação da Escuela Superior
-            Politécnica del Litoral, em Guayaquil, Equador. Em 2021, ela obteve seu doutorado em Computação Centrada no Ser
-            Humano no Instituto de Tecnologia da Geórgia, em Atlanta, Estados Unidos, e em 2011, obteve um mestrado em
-            Interação Humano-Computador na Universidade de Indiana, Bloomington. Marisol investiga como teorias das ciências
-            sociais, culturais e da aprendizagem podem informar o co-design baseado em pontos fortes de tecnologias com
-            grupos vulneráveis, como famílias imigrantes. Contrariamente à abordagem tradicional de projetar com base em
-            necessidades, que tenta corrigir as deficiências das populações vulneráveis, o design baseado em pontos fortes
-            que Marisol explora busca reconhecer, aproveitar e aprimorar o conhecimento e as capacidades desses grupos.
-            Marisol foi bolsista Fulbright e bolsista do programa Schlumberger Faculty for the Future. Ela também é membro
-            do Comitê Latino-Americano da ACM SIGCHI, é regularmente Presidente Associada do subcomitê de Computação Crítica
-            para o CHI, editora associada do ACM Journal on Computing and Sustainable Societies, Presidente de Conferência
-            do CLIHC 2023 e Presidente de Trabalhos do CSCW 2024.
+            Odile Juárez é uma empreendedora mexicana que promove uma visão mais humana e acessível
+            da tecnologia na vida cotidiana. É CEO e cofundadora da Mayordomm, uma inteligência
+            artificial comunitária desenvolvida para ajudar as famílias a se organizarem de forma
+            mais inteligente e colaborativa. Por meio da Inteligência Artificial, a Mayordomm
+            organiza e antecipa mais de 200 tarefas domésticas que uma mulher latino-americana
+            realiza mensalmente, reduzindo a carga mental e devolvendo tempo valioso.
+        </p>
+        <p>
+            Sua proposta vai além de um aplicativo: busca consolidar a produtividade familiar como
+            uma nova categoria, permitindo que as famílias dediquem seu tempo a conviver, crescer e
+            desfrutar, em vez de investir mais de 40 horas em tarefas que podem ser automatizadas.
+            Além disso, Odile é palestrante em ética aplicada à inteligência artificial, host do
+            podcast <em>Una Tacita de Tech</em> e divulgadora ativa nas redes sociais. Promove o uso
+            responsável da tecnologia, com ênfase na privacidade de dados.
+        </p>
+        <p>
+            Com mais de uma década de experiência em inovação, startups e desenvolvimento de
+            produtos, além de mestrado em Marketing Digital, defende uma tecnologia construída com e
+            para as pessoas.
         </p>
     </SpeakerLargeItem>
-
-    <SpeakerLargeItem>
-        <template #image>
-            <img id="claudia-lopez" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/claudia.png" alt="Claudia" />
-        </template>
-        <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/claudia.png&quot;);">
-            </div>
-        </template>
-        <template #name>
-            Dr. Claudia López Moncada
-        </template>
-
-        <p>
-            Claudia López Moncada trabalha como acadêmica no Departamento de Ciência da Computação da Universidade Técnica
-            Federico Santa María (UTFSM) em Valparaíso, Chile. Ela também é pesquisadora no Centro Nacional de Inteligência
-            Artificial (CENIA) e no Núcleo Milênio de Pesquisa do Futuro da Inteligência Artificial (FAIR) no mesmo país.
-            Obteve seu doutorado em Ciências da Informação e Tecnologia pela Universidade de Pittsburgh. Seu trabalho se
-            concentra na interação humano-computador (HCI) e na inteligência artificial centrada nas pessoas. Claudia é
-            co-diretora do Laboratório de Experiência do Usuário em UTFSM e participa ativamente da comunidade de HCI na
-            América Latina e de iniciativas para aumentar a participação das mulheres na computação.
-        </p>
-    </SpeakerLargeItem>
-
-    <SpeakerLargeItem>
-        <template #image>
-            <img id="philippe-palanque" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/philippe.png" alt="Philippe" />
-        </template>
-        <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/philippe.png&quot;);">
-            </div>
-        </template>
-        <template #name>
-            Dr. Philippe Palanque
-        </template>
-
-        <p>
-            Philippe Palanque é professor de Ciência da Computação na Universidade de Toulouse 3 e é chefe do departamento
-            de Confiabilidade de Software e Sistemas no IRIT (Laboratório de Pesquisa em Ciências da Computação de
-            Toulouse). Por muitos anos, ele esteve envolvido em projetos de pesquisa na área de Sistemas de Comando e
-            Controle em múltiplos domínios, incluindo drones, interfaces multimodais para cockpits militares, sistemas de
-            segmento terrestre em salas de controle de satélites, estações de controle de tráfego aéreo, segurança de voo
-            para plataformas de lançamento e muito mais. Na aviação civil, trabalhou em questões de especificação e
-            certificação de novos cockpits interativos (que precisam estar em conformidade com a especificação padrão ARINC
-            661) de grandes aeronaves, como o Airbus A350, com um foco recente em interações multitouch. Em todos esses
-            domínios, a modelagem conjunta do comportamento do sistema interativo e das tarefas do usuário foi um
-            aspecto-chave para avaliar e garantir a compatibilidade entre o trabalho dos operadores e as ferramentas
-            fornecidas para realizar esse trabalho. Ele editou e coeditou mais de vinte livros ou atas de conferências e
-            coautorou mais de 200 publicações arbitradas em conferências e revistas internacionais. Ele é membro da Academia
-            CHI da ACM SIGCHI e presidente da Assembleia Técnica da IFIP.
-        </p>
-    </SpeakerLargeItem>
-    -->
 </template>

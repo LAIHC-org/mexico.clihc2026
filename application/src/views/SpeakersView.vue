@@ -13,7 +13,6 @@ export default {
     Breadcrumbs
   },
   setup() {
-  
     const { locale } = useI18n()
     const contentComponent = shallowRef(null)
 
@@ -56,58 +55,47 @@ export default {
     <div class="container">
       <div class="row">
         <div class="row justify-content-center my-3">
-          <div class="col-lg-8">
-            <!--
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#roberto-martinez'})" class="uline">
-                      Dr. Roberto Martinez-Maldonado
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
+          <div class="col-lg-10">
 
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#marisol-wong'})" class="uline">
-                      Dr. Marisol Wong-Villacres
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
+            <div class="alert alert-gradient-keynote d-flex align-items-center shadow-sm rounded-4 mb-4 p-4 border-0">
+              <span class="me-3 flex-shrink-0" aria-hidden="true">
+                <i class="fa-solid fa-microphone-lines fa-2x text-white" aria-hidden="true"></i>
+              </span>
+              <div>
+                <h2 class="text-white fs-5 mb-0 fw-bold">{{ $t("nav.keynotes") }}</h2>
+                <span class="text-white-50" style="font-size: 0.95rem;">
+                  {{ $t("nav.keynotes_message") }}
+                </span>
+              </div>
+            </div>
 
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#claudia-lopez'})" class="uline">
-                      Dr. Claudia López Moncada
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
+            <div class="d-flex flex-wrap gap-2 mb-4" role="navigation" aria-label="Keynote Speakers Navigation">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#jp-hourcade'})" class="text-decoration-none" aria-label="Go to Dr. Juan Pablo Hourcade">
+                <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
+                  <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Dr. Juan Pablo Hourcade
+                </span>
+              </RouterLink>
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#odile-juarez'})" class="text-decoration-none" aria-label="Go to Odile Juárez">
+                <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
+                  <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Odile Juárez
+                </span>
+              </RouterLink>
+            </div>
 
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#philippe-palanque'})" class="uline">
-                      Dr. Philippe Palanque 
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
-            </ol>
-          
             <template v-if="contentComponent">
-                <component :is="contentComponent" />
+              <component :is="contentComponent" />
             </template>
-            -->
-            <p class="mt-5 text-center">{{ $t("soon.speakers") }} </p>
+
           </div>
         </div>
       </div>
     </div>
   </section>
+
 </template>
+
+<style scoped>
+.alert-gradient-keynote {
+  background: linear-gradient(135deg, #5C8455 0%, #3d6b38 100%);
+}
+</style>

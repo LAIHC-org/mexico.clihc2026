@@ -15,76 +15,35 @@ export default {
 </script>
 
 <template>
-    <div class="row mb-4">
-        <!--
-        <SpeakerItem>
-            <template #image>
-                <img src="/assets/img/people/roberto.png" alt="Roberto" class="img-fluid shadow rounded-3">
-            </template>
-            <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/roberto.png&quot;);">
-                </div>
-            </template>
-            <template #name>
-                Dr. Roberto Martinez-Maldonado
-            </template>
-
-            holds a Ph.D. in Information Technologies and serves as a Senior Lecturer in Learning Analytics and
-            Human-Computer Interaction at Monash University, Australia. He's known for pioneering research in Human-Centred
-            AI in Education, has chaired international conferences, and is an Associate Editor for the International Journal
-            of Artificial Intelligence in Education.
-        </SpeakerItem>
-
-        <SpeakerItem>
-            <template #image>
-                <img src="/assets/img/people/marisol2.png" alt="Marisol 2" class="img-fluid shadow rounded-3">
-            </template>
-            <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/marisol2.png&quot;);"></div>
-            </template>
-            <template #name>
-                Dr. Marisol Wong-Villacres
-            </template>
-
-            An Associate Professor at the Computer Science Program of Escuela Superior Politécnica del Litoral, Guayaquil,
-            Ecuador, earned her Ph.D. in Human-Centered Computing from the Georgia Institute of Technology in 2021. Her
-            research focuses on strengths-based co-design of technologies for vulnerable groups, departing from the
-            traditional needs-based approach.
-        </SpeakerItem>
-    </div>
     <div class="row">
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/claudia.png" alt="Claudia" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/people/jpOurcade.jpg" alt="Juan Pablo Hourcade" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/claudia.png&quot;);"></div>
+                <div class="colored-shadow" style="background-image: url('/assets/img/people/jpOurcade.jpg');"></div>
             </template>
             <template #name>
-                Dr. Claudia López Moncada
+                Dr. Juan Pablo Hourcade
             </template>
 
-            Is an academic at the Department of Informatics at UTFSM in Valparaíso, Chile. She's also a researcher at the
-            National Center for Artificial Intelligence (CENIA) and the Millennium Nucleus for Future of Artificial
-            Intelligence Research (FAIR) in Chile. With a Ph.D. from the University of Pittsburgh, her work focuses on
-            human-computer interaction (HCI) and person-centered artificial intelligence.
+            A leading scholar in human-computer interaction and childhood, focused on technologies that support creativity, well-being, and access to information.
+            <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#jp-hourcade' })" class="uline d-inline-block mt-2">Read full bio</RouterLink>
         </SpeakerItem>
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/philippe.png" alt="Philippe" class="img-fluid shadow rounded-3">
+                <img src="/assets/img/people/odile.png" alt="Odile Juárez" class="img-fluid shadow rounded-3">
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/philippe.png&quot;);"></div>
+                <div class="colored-shadow" style="background-image: url('/assets/img/people/odile.png');"></div>
             </template>
             <template #name>
-                Dr. Philippe Palanque
+                M.Sc. Odile Juárez
             </template>
 
-            Computer Science professor at the University of Toulouse 3, specializes in Command and Control Systems,
-            including drones, multimodal military interfaces, and aviation safety. With extensive research contributions,
-            he's an ACM SIGCHI CHI Academy member and chairs the IFIP Technical Assembly.
+            Mexican entrepreneur and co-founder of Mayordomm, advancing a more human vision of artificial intelligence for family organization and data privacy.
+            <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#odile-juarez' })" class="uline d-inline-block mt-2">Read full bio</RouterLink>
         </SpeakerItem>
-        -->
     </div>
 </template>
